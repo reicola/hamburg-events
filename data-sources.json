@@ -1,1 +1,675 @@
-[{"id":"ticketmaster","name":"Ticketmaster (Connector)","type":"Ticketportal","ort":"Hamburg +30 km","url":"https://www.ticketmaster.de","tier":"A"},{"id":"eventim","name":"Eventim","type":"Ticketportal","ort":"Hamburg","url":"https://www.eventim.de/city/hamburg-7/","tier":"A"},{"id":"reservix","name":"Reservix","type":"Ticketportal","ort":"Hamburg","url":"https://www.reservix.de","tier":"B"},{"id":"hamburg-tourism","name":"Hamburg Tourismus Veranstaltungskalender","type":"Aggregator","ort":"Hamburg","url":"https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungskalender/","tier":"A"},{"id":"hamburg-de","name":"hamburg.de Veranstaltungen","type":"Aggregator","ort":"Hamburg","url":"https://www.hamburg.de/kultur/veranstaltungen","tier":"A"},{"id":"mvp","name":"mvp.de Hamburg","type":"Aggregator","ort":"Hamburg","url":"https://www.mvp.de/hamburg/veranstaltungen/konzerte/","tier":"A"},{"id":"rausgegangen","name":"rausgegangen Hamburg","type":"Aggregator","ort":"Hamburg","url":"https://rausgegangen.de/hamburg/","tier":"B"},{"id":"songkick","name":"Songkick Hamburg","type":"Aggregator","ort":"Hamburg","url":"https://www.songkick.com/metro-areas/28443-germany-hamburg","tier":"A"},{"id":"elbphilharmonie","name":"Elbphilharmonie","type":"Konzerthaus","ort":"HafenCity","url":"https://www.elbphilharmonie.de/de/programm/","tier":"A"},{"id":"laeiszhalle","name":"Laeiszhalle","type":"Konzerthaus","ort":"Neustadt","url":"https://www.elbphilharmonie.de/de/programm/?venue=laeiszhalle","tier":"A"},{"id":"barclays","name":"Barclays Arena","type":"Arena","ort":"Bahrenfeld","url":"https://www.barclays-arena.de/events","tier":"A"},{"id":"sporthalle","name":"Sporthalle Hamburg","type":"Arena","ort":"Winterhude","url":"https://ssl.webpack.de/termine.sporthallehamburg.de/pr/clipper.php","tier":"A"},{"id":"inselpark","name":"Inselpark Arena","type":"Arena","ort":"Wilhelmsburg","url":"https://www.inselpark-arena.de","tier":"A"},{"id":"volkspark","name":"Volksparkstadion","type":"Stadion","ort":"Bahrenfeld","url":"https://www.hsv.de/stadion","tier":"B"},{"id":"stadtpark","name":"Stadtpark Open Air","type":"Open Air","ort":"Winterhude","url":"https://www.stadtparkopenair.de","tier":"A"},{"id":"trabrennbahn","name":"Trabrennbahn Bahrenfeld","type":"Open Air","ort":"Bahrenfeld","url":"https://www.trabrennbahn-bahrenfeld.de","tier":"B"},{"id":"cch","name":"CCH – Congress Center Hamburg","type":"Kongress","ort":"St. Pauli","url":"https://www.cch.de","tier":"A"},{"id":"messe","name":"Hamburg Messe","type":"Messe","ort":"St. Pauli","url":"https://www.hamburg-messe.de/de/messen-und-events/","tier":"A"},{"id":"georg-elser","name":"Georg Elser Halle","type":"Halle","ort":"Barmbek","url":"https://www.georg-elser-halle.de","tier":"B"},{"id":"docks","name":"Docks / Prinzenbar","type":"Club","ort":"St. Pauli","url":"https://www.docks-prinzenbar.de","tier":"A"},{"id":"grossefreiheit","name":"Große Freiheit 36 / Kaiserkeller","type":"Club","ort":"St. Pauli","url":"https://grossefreiheit36.de/events","tier":"A"},{"id":"markthalle","name":"Markthalle","type":"Club","ort":"Altstadt","url":"https://www.markthalle-hamburg.de","tier":"A"},{"id":"fabrik","name":"Fabrik","type":"Club","ort":"Ottensen","url":"https://fabrik.de/programm","tier":"A"},{"id":"knust","name":"Knust","type":"Club","ort":"St. Pauli","url":"https://knusthamburg.de/programm/","tier":"A"},{"id":"gruenspan","name":"Grünspan","type":"Club","ort":"St. Pauli","url":"https://www.gruenspan.de","tier":"A"},{"id":"mojo","name":"Mojo Club","type":"Club","ort":"St. Pauli","url":"https://www.mojo.de/programme/","tier":"A"},{"id":"uebel","name":"Uebel & Gefährlich","type":"Club","ort":"St. Pauli","url":"https://www.uebelundgefaehrlich.com","tier":"A"},{"id":"molotow","name":"Molotow","type":"Club","ort":"St. Pauli","url":"https://www.molotowclub.com/programm/programm.php","tier":"A"},{"id":"logo","name":"Logo","type":"Club","ort":"Rotherbaum","url":"https://www.logohamburg.de/programm/","tier":"A"},{"id":"bahnhofpauli","name":"Bahnhof Pauli","type":"Club","ort":"St. Pauli","url":"https://www.bahnhofpauli.de","tier":"B"},{"id":"nochtspeicher","name":"Nochtspeicher","type":"Club","ort":"St. Pauli","url":"https://nochtspeicher.de/ (Seiten ?start=30,60,90)","tier":"A"},{"id":"hafenklang","name":"Hafenklang","type":"Club","ort":"Altona","url":"https://www.hafenklang.org","tier":"B"},{"id":"indra","name":"Indra","type":"Club","ort":"St. Pauli","url":"https://www.indramusikclub.com","tier":"B"},{"id":"kent","name":"KENT Club","type":"Club","ort":"St. Pauli","url":"https://www.kentclub.de","tier":"B"},{"id":"betty","name":"Betty","type":"Club","ort":"St. Pauli","url":"https://www.betty-hamburg.de","tier":"B"},{"id":"kulturkirche","name":"Kulturkirche Altona","type":"Konzertort","ort":"Altona","url":"https://www.kulturkirche.de","tier":"B"},{"id":"michel","name":"Hauptkirche St. Michaelis","type":"Konzertort","ort":"Neustadt","url":"https://www.st-michaelis.de","tier":"B"},{"id":"resonanzraum","name":"resonanzraum (Bunker)","type":"Konzertort","ort":"St. Pauli","url":"https://www.resonanzraum.net","tier":"B"},{"id":"hfmt","name":"HfMT Forum","type":"Konzertort","ort":"Rotherbaum","url":"https://www.hfmt-hamburg.de","tier":"B"},{"id":"staatsoper","name":"Staatsoper / Hamburg Ballett","type":"Oper","ort":"Neustadt","url":"https://www.staatsoper-hamburg.de","tier":"A"},{"id":"schauspielhaus","name":"Deutsches Schauspielhaus","type":"Theater","ort":"St. Georg","url":"https://schauspielhaus.de/spielplan?schedule%5B0%5D=month%3AJJJJ-MM","tier":"A"},{"id":"thalia","name":"Thalia Theater","type":"Theater","ort":"Altstadt","url":"https://www.thalia-theater.de/de/termine","tier":"A"},{"id":"kampnagel","name":"Kampnagel","type":"Theater","ort":"Winterhude","url":"https://kampnagel.de/kalender","tier":"A"},{"id":"stpaulitheater","name":"St. Pauli Theater","type":"Theater","ort":"St. Pauli","url":"https://www.st-pauli-theater.de","tier":"B"},{"id":"ernstdeutsch","name":"Ernst Deutsch Theater","type":"Theater","ort":"Uhlenhorst","url":"https://www.ernst-deutsch-theater.de","tier":"B"},{"id":"schmidt","name":"Schmidt Theater / Schmidts Tivoli","type":"Theater","ort":"St. Pauli","url":"https://www.tivoli.de","tier":"B"},{"id":"almahoppe","name":"Alma Hoppes Lustspielhaus","type":"Kabarett","ort":"Eppendorf","url":"https://www.almahoppe.de","tier":"B"},{"id":"polittbuero","name":"Polittbüro","type":"Kabarett","ort":"St. Georg","url":"https://www.polittbuero.de","tier":"B"},{"id":"laeiszkammermusik","name":"Hamburger Kammerkunstverein / NDR Konzerte","type":"Konzertveranstalter","ort":"Hamburg","url":"https://www.ndr.de/orchester_chor/","tier":"B"},{"id":"kunsthalle","name":"Hamburger Kunsthalle","type":"Museum","ort":"St. Georg","url":"https://www.hamburger-kunsthalle.de/ausstellungen","tier":"A"},{"id":"deichtorhallen","name":"Deichtorhallen","type":"Museum","ort":"Altstadt","url":"https://www.deichtorhallen.de/ausstellungen","tier":"A"},{"id":"bucerius","name":"Bucerius Kunst Forum","type":"Museum","ort":"Altstadt","url":"https://www.buceriuskunstforum.de","tier":"A"},{"id":"mkg","name":"Museum für Kunst und Gewerbe (MKG)","type":"Museum","ort":"St. Georg","url":"https://www.mkg-hamburg.de/ausstellungen","tier":"A"},{"id":"kunstverein","name":"Kunstverein in Hamburg","type":"Museum","ort":"Altstadt","url":"https://www.kunstverein.de","tier":"A"},{"id":"kunsthaus","name":"Kunsthaus Hamburg","type":"Museum","ort":"Altstadt","url":"https://www.kunsthaushamburg.de","tier":"B"},{"id":"barlach","name":"Ernst Barlach Haus","type":"Museum","ort":"Othmarschen","url":"https://www.barlach-haus.de","tier":"A"},{"id":"falckenberg","name":"Sammlung Falckenberg","type":"Museum","ort":"Harburg","url":"https://www.deichtorhallen.de","tier":"B"},{"id":"marks","name":"MARKK","type":"Museum","ort":"Rotherbaum","url":"https://markk-hamburg.de","tier":"B"},{"id":"shmh","name":"Museum für Hamburgische Geschichte","type":"Museum","ort":"Hamburg","url":"https://www.shmh.de","tier":"B","note":"ohne Altonaer Museum und Museum der Arbeit"},{"id":"oberhafen","name":"Oberhafen / Phoxxi / Galerien","type":"Galerie","ort":"HafenCity","url":"https://www.oberhafen.net","tier":"B"},{"id":"norderstedt-tribuehne","name":"TriBühne / Kulturwerk am See Norderstedt","type":"Theater","ort":"Norderstedt","url":"https://www.tribuehne.de/programm","tier":"A"},{"id":"pinneberg","name":"Kulturzentrum Drostei / Pinneberg","type":"Kulturzentrum","ort":"Pinneberg","url":"https://www.drostei.de/programm","tier":"A"},{"id":"wedel","name":"Theaterschiff Batavia Wedel","type":"Theater","ort":"Wedel","url":"https://www.batavia-wedel.de/programm/","tier":"A"},{"id":"ahrensburg","name":"Alfred-Rust-Saal / Marstall Ahrensburg","type":"Kulturzentrum","ort":"Ahrensburg","url":"https://www.marstall-ahrensburg.de/programm","tier":"A"},{"id":"reinbek","name":"Schloss Reinbek","type":"Kulturzentrum","ort":"Reinbek","url":"https://www.schloss-reinbek.de/de/kulturprogramm/veranstaltungskalender/","tier":"A"},{"id":"buxtehude","name":"Stadthalle / Kulturforum Buxtehude","type":"Kulturzentrum","ort":"Buxtehude","url":"https://www.mvp.de/niedersachsen/veranstaltungen/ (Buxtehuder Kleinkunst-Igel, Halepaghen-Bühne)","tier":"A"},{"id":"stade","name":"Stadeum Stade","type":"Kulturzentrum","ort":"Stade","url":"https://www.stadeum.de/veranstaltungen","tier":"A"},{"id":"seevetal","name":"Burg Seevetal / Hittfeld","type":"Kulturzentrum","ort":"Seevetal","url":"https://www.burg-seevetal.de/portal/aseiten/veranstaltungen-1000-10.html","tier":"A"},{"id":"ewerk","name":"E-Werk","type":"Club","ort":"Köln","url":"https://www.e-werk-cologne.com/programm/","tier":"A"},{"id":"palladium","name":"Palladium","type":"Club","ort":"Köln","url":"https://www.palladium-koeln.de/programm/","tier":"A"},{"id":"gloria","name":"Gloria Theater","type":"Kabarett/Konzert","ort":"Köln","url":"https://gloria.koeln/programm","tier":"A"},{"id":"columbiahalle","name":"Columbiahalle / Columbia Theater","type":"Club","ort":"Berlin","url":"https://columbiahalle.berlin/veranstaltungen.html","tier":"A"},{"id":"astra","name":"Astra Kulturhaus","type":"Club","ort":"Berlin","url":"https://www.astra-berlin.de","tier":"A"},{"id":"festsaal","name":"Festsaal Kreuzberg","type":"Club","ort":"Berlin","url":"https://www.festsaal-kreuzberg.de","tier":"A"},{"id":"lido","name":"Lido","type":"Club","ort":"Berlin","url":"https://www.lido-berlin.de","tier":"A"},{"id":"so36","name":"SO36","type":"Club","ort":"Berlin","url":"https://www.so36.com","tier":"A"},{"id":"huxleys","name":"Huxleys Neue Welt","type":"Club","ort":"Berlin","url":"https://huxleysneuewelt.de/events","tier":"A"},{"id":"centralkomitee","name":"Centralkomitee","type":"Comedy/Kabarett","ort":"St. Georg","url":"https://tickets.centralkomitee.de/tickets","tier":"A"},{"id":"kammerspiele","name":"Hamburger Kammerspiele","type":"Theater","ort":"Rotherbaum","url":"https://hamburger-kammerspiele.de/karten/","tier":"A"},{"id":"festival-reeperbahn","name":"Reeperbahn Festival","type":"Festival","ort":"St. Pauli","url":"https://www.reeperbahnfestival.com/","tier":"A"},{"id":"festival-elbjazz","name":"ELBJAZZ","type":"Festival","ort":"Steinwerder","url":"https://www.elbjazz.de/","tier":"A"},{"id":"festival-dockville","name":"MS Dockville","type":"Festival","ort":"Wilhelmsburg","url":"https://msdockville.de/","tier":"A"},{"id":"festival-harbourfront","name":"Harbour Front Literaturfestival","type":"Festival","ort":"Hamburg","url":"https://www.harbourfront-hamburg.com/","tier":"A"}]
+[
+ {
+  "id": "ticketmaster",
+  "name": "Ticketmaster (Connector)",
+  "type": "Ticketportal",
+  "ort": "Hamburg +30 km",
+  "url": "https://www.ticketmaster.de",
+  "tier": "A"
+ },
+ {
+  "id": "eventim",
+  "name": "Eventim",
+  "type": "Ticketportal",
+  "ort": "Hamburg",
+  "url": "https://www.eventim.de/city/hamburg-7/",
+  "tier": "A"
+ },
+ {
+  "id": "reservix",
+  "name": "Reservix",
+  "type": "Ticketportal",
+  "ort": "Hamburg",
+  "url": "https://www.reservix.de",
+  "tier": "B"
+ },
+ {
+  "id": "hamburg-tourism",
+  "name": "Hamburg Tourismus Veranstaltungskalender",
+  "type": "Aggregator",
+  "ort": "Hamburg",
+  "url": "https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungskalender/",
+  "tier": "A"
+ },
+ {
+  "id": "hamburg-de",
+  "name": "hamburg.de Veranstaltungen",
+  "type": "Aggregator",
+  "ort": "Hamburg",
+  "url": "https://www.hamburg.de/kultur/veranstaltungen",
+  "tier": "A"
+ },
+ {
+  "id": "mvp",
+  "name": "mvp.de Hamburg",
+  "type": "Aggregator",
+  "ort": "Hamburg",
+  "url": "https://www.mvp.de/hamburg/veranstaltungen/konzerte/",
+  "tier": "A"
+ },
+ {
+  "id": "rausgegangen",
+  "name": "rausgegangen Hamburg",
+  "type": "Aggregator",
+  "ort": "Hamburg",
+  "url": "https://rausgegangen.de/hamburg/",
+  "tier": "B"
+ },
+ {
+  "id": "songkick",
+  "name": "Songkick Hamburg",
+  "type": "Aggregator",
+  "ort": "Hamburg",
+  "url": "https://www.songkick.com/metro-areas/28443-germany-hamburg",
+  "tier": "A"
+ },
+ {
+  "id": "elbphilharmonie",
+  "name": "Elbphilharmonie",
+  "type": "Konzerthaus",
+  "ort": "HafenCity",
+  "url": "https://www.elbphilharmonie.de/de/programm/",
+  "tier": "A"
+ },
+ {
+  "id": "laeiszhalle",
+  "name": "Laeiszhalle",
+  "type": "Konzerthaus",
+  "ort": "Neustadt",
+  "url": "https://www.elbphilharmonie.de/de/programm/?venue=laeiszhalle",
+  "tier": "A"
+ },
+ {
+  "id": "barclays",
+  "name": "Barclays Arena",
+  "type": "Arena",
+  "ort": "Bahrenfeld",
+  "url": "https://www.barclays-arena.de/events",
+  "tier": "A"
+ },
+ {
+  "id": "sporthalle",
+  "name": "Sporthalle Hamburg",
+  "type": "Arena",
+  "ort": "Winterhude",
+  "url": "https://ssl.webpack.de/termine.sporthallehamburg.de/pr/clipper.php",
+  "tier": "A"
+ },
+ {
+  "id": "inselpark",
+  "name": "Inselpark Arena",
+  "type": "Arena",
+  "ort": "Wilhelmsburg",
+  "url": "https://www.inselpark-arena.de",
+  "tier": "A"
+ },
+ {
+  "id": "volkspark",
+  "name": "Volksparkstadion",
+  "type": "Stadion",
+  "ort": "Bahrenfeld",
+  "url": "https://www.songkick.com/venues/93566-volksparkstadion/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "stadtpark",
+  "name": "Stadtpark Open Air",
+  "type": "Open Air",
+  "ort": "Winterhude",
+  "url": "https://stadtparkopenair.de/",
+  "tier": "A"
+ },
+ {
+  "id": "trabrennbahn",
+  "name": "Trabrennbahn Bahrenfeld",
+  "type": "Open Air",
+  "ort": "Bahrenfeld",
+  "url": "https://www.trabrennbahn-bahrenfeld.de",
+  "tier": "B"
+ },
+ {
+  "id": "cch",
+  "name": "CCH – Congress Center Hamburg",
+  "type": "Kongress",
+  "ort": "St. Pauli",
+  "url": "https://www.cch.de/whats-on/events",
+  "tier": "A"
+ },
+ {
+  "id": "messe",
+  "name": "Hamburg Messe",
+  "type": "Messe",
+  "ort": "St. Pauli",
+  "url": "https://www.hamburg-messe.de/de/messen-und-events/",
+  "tier": "A"
+ },
+ {
+  "id": "georg-elser",
+  "name": "Georg Elser Halle",
+  "type": "Halle",
+  "ort": "Barmbek",
+  "url": "https://www.songkick.com/venues/4427348-georg-elser-halle/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "docks",
+  "name": "Docks / Prinzenbar",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.songkick.com/venues/29587-docks-hamburg/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "grossefreiheit",
+  "name": "Große Freiheit 36 / Kaiserkeller",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://grossefreiheit36.de/events",
+  "tier": "A"
+ },
+ {
+  "id": "markthalle",
+  "name": "Markthalle",
+  "type": "Club",
+  "ort": "Altstadt",
+  "url": "https://www.markthalle-hamburg.de",
+  "tier": "A"
+ },
+ {
+  "id": "fabrik",
+  "name": "Fabrik",
+  "type": "Club",
+  "ort": "Ottensen",
+  "url": "https://fabrik.de/programm",
+  "tier": "A"
+ },
+ {
+  "id": "knust",
+  "name": "Knust",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://knusthamburg.de/programm/",
+  "tier": "A"
+ },
+ {
+  "id": "gruenspan",
+  "name": "Grünspan",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.gruenspan.de",
+  "tier": "A"
+ },
+ {
+  "id": "mojo",
+  "name": "Mojo Club",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.mojo.de/programme/",
+  "tier": "A"
+ },
+ {
+  "id": "uebel",
+  "name": "Uebel & Gefährlich",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.uebelundgefaehrlich.com",
+  "tier": "A"
+ },
+ {
+  "id": "molotow",
+  "name": "Molotow",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.molotowclub.com/programm/programm.php",
+  "tier": "A"
+ },
+ {
+  "id": "logo",
+  "name": "Logo",
+  "type": "Club",
+  "ort": "Rotherbaum",
+  "url": "https://www.logohamburg.de/programm/",
+  "tier": "A"
+ },
+ {
+  "id": "bahnhofpauli",
+  "name": "Bahnhof Pauli",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.songkick.com/venues/3163919-bahnhof-pauli/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "nochtspeicher",
+  "name": "Nochtspeicher",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://nochtspeicher.de/ (Seiten ?start=30,60,90)",
+  "tier": "A"
+ },
+ {
+  "id": "hafenklang",
+  "name": "Hafenklang",
+  "type": "Club",
+  "ort": "Altona",
+  "url": "https://www.songkick.com/venues/93248-hafenklang/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "indra",
+  "name": "Indra",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.songkick.com/venues/587811-indra/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "kent",
+  "name": "KENT Club",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.songkick.com/venues/4648520-kent-club-hamburg/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "betty",
+  "name": "Betty",
+  "type": "Club",
+  "ort": "St. Pauli",
+  "url": "https://www.songkick.com/venues/4611889-betty/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "kulturkirche",
+  "name": "Kulturkirche Altona",
+  "type": "Konzertort",
+  "ort": "Altona",
+  "url": "https://www.songkick.com/venues/515941-kulturkirche-altona/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "michel",
+  "name": "Hauptkirche St. Michaelis",
+  "type": "Konzertort",
+  "ort": "Neustadt",
+  "url": "https://st-michaelis.de/musik/karten-web-shop-konzerte/",
+  "tier": "A"
+ },
+ {
+  "id": "resonanzraum",
+  "name": "resonanzraum (Bunker)",
+  "type": "Konzertort",
+  "ort": "St. Pauli",
+  "url": "https://www.resonanzraum.net",
+  "tier": "B"
+ },
+ {
+  "id": "hfmt",
+  "name": "HfMT Forum",
+  "type": "Konzertort",
+  "ort": "Rotherbaum",
+  "url": "https://www.hfmt-hamburg.de",
+  "tier": "B"
+ },
+ {
+  "id": "staatsoper",
+  "name": "Staatsoper / Hamburg Ballett",
+  "type": "Oper",
+  "ort": "Neustadt",
+  "url": "https://www.staatsoper-hamburg.de",
+  "tier": "A"
+ },
+ {
+  "id": "schauspielhaus",
+  "name": "Deutsches Schauspielhaus",
+  "type": "Theater",
+  "ort": "St. Georg",
+  "url": "https://schauspielhaus.de/spielplan?schedule%5B0%5D=month%3AJJJJ-MM",
+  "tier": "A"
+ },
+ {
+  "id": "thalia",
+  "name": "Thalia Theater",
+  "type": "Theater",
+  "ort": "Altstadt",
+  "url": "https://www.thalia-theater.de/de/termine",
+  "tier": "A"
+ },
+ {
+  "id": "kampnagel",
+  "name": "Kampnagel",
+  "type": "Theater",
+  "ort": "Winterhude",
+  "url": "https://kampnagel.de/kalender",
+  "tier": "A"
+ },
+ {
+  "id": "stpaulitheater",
+  "name": "St. Pauli Theater",
+  "type": "Theater",
+  "ort": "St. Pauli",
+  "url": "https://www.st-pauli-theater.de/spielplan/",
+  "tier": "A"
+ },
+ {
+  "id": "ernstdeutsch",
+  "name": "Ernst Deutsch Theater",
+  "type": "Theater",
+  "ort": "Uhlenhorst",
+  "url": "https://www.ernst-deutsch-theater.de/spielplan",
+  "tier": "A"
+ },
+ {
+  "id": "schmidt",
+  "name": "Schmidt Theater / Schmidts Tivoli",
+  "type": "Theater",
+  "ort": "St. Pauli",
+  "url": "https://www.tivoli.de/programm-tickets/spielplan",
+  "tier": "A"
+ },
+ {
+  "id": "almahoppe",
+  "name": "Alma Hoppes Lustspielhaus",
+  "type": "Kabarett",
+  "ort": "Eppendorf",
+  "url": "https://www.almahoppe.de/spielplan/",
+  "tier": "A"
+ },
+ {
+  "id": "polittbuero",
+  "name": "Polittbüro",
+  "type": "Kabarett",
+  "ort": "St. Georg",
+  "url": "https://www.polittbuero.de",
+  "tier": "B"
+ },
+ {
+  "id": "laeiszkammermusik",
+  "name": "Hamburger Kammerkunstverein / NDR Konzerte",
+  "type": "Konzertveranstalter",
+  "ort": "Hamburg",
+  "url": "https://www.ndr.de/orchester_chor/",
+  "tier": "B"
+ },
+ {
+  "id": "kunsthalle",
+  "name": "Hamburger Kunsthalle",
+  "type": "Museum",
+  "ort": "St. Georg",
+  "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen",
+  "tier": "A"
+ },
+ {
+  "id": "deichtorhallen",
+  "name": "Deichtorhallen",
+  "type": "Museum",
+  "ort": "Altstadt",
+  "url": "https://www.deichtorhallen.de/ausstellungen",
+  "tier": "A"
+ },
+ {
+  "id": "bucerius",
+  "name": "Bucerius Kunst Forum",
+  "type": "Museum",
+  "ort": "Altstadt",
+  "url": "https://www.buceriuskunstforum.de",
+  "tier": "A"
+ },
+ {
+  "id": "mkg",
+  "name": "Museum für Kunst und Gewerbe (MKG)",
+  "type": "Museum",
+  "ort": "St. Georg",
+  "url": "https://www.mkg-hamburg.de/ausstellungen",
+  "tier": "A"
+ },
+ {
+  "id": "kunstverein",
+  "name": "Kunstverein in Hamburg",
+  "type": "Museum",
+  "ort": "Altstadt",
+  "url": "https://www.kunstverein.de",
+  "tier": "A"
+ },
+ {
+  "id": "kunsthaus",
+  "name": "Kunsthaus Hamburg",
+  "type": "Museum",
+  "ort": "Altstadt",
+  "url": "https://www.kunsthaushamburg.de/",
+  "tier": "A"
+ },
+ {
+  "id": "barlach",
+  "name": "Ernst Barlach Haus",
+  "type": "Museum",
+  "ort": "Othmarschen",
+  "url": "https://www.barlach-haus.de",
+  "tier": "A"
+ },
+ {
+  "id": "falckenberg",
+  "name": "Sammlung Falckenberg",
+  "type": "Museum",
+  "ort": "Harburg",
+  "url": "https://www.deichtorhallen.de",
+  "tier": "B"
+ },
+ {
+  "id": "marks",
+  "name": "MARKK",
+  "type": "Museum",
+  "ort": "Rotherbaum",
+  "url": "https://markk-hamburg.de",
+  "tier": "B"
+ },
+ {
+  "id": "shmh",
+  "name": "Museum für Hamburgische Geschichte",
+  "type": "Museum",
+  "ort": "Hamburg",
+  "url": "https://www.shmh.de",
+  "tier": "B",
+  "note": "ohne Altonaer Museum und Museum der Arbeit"
+ },
+ {
+  "id": "oberhafen",
+  "name": "Oberhafen / Phoxxi / Galerien",
+  "type": "Galerie",
+  "ort": "HafenCity",
+  "url": "https://www.oberhafen.net",
+  "tier": "B"
+ },
+ {
+  "id": "norderstedt-tribuehne",
+  "name": "TriBühne / Kulturwerk am See Norderstedt",
+  "type": "Theater",
+  "ort": "Norderstedt",
+  "url": "https://www.tribuehne.de/programm",
+  "tier": "A"
+ },
+ {
+  "id": "pinneberg",
+  "name": "Kulturzentrum Drostei / Pinneberg",
+  "type": "Kulturzentrum",
+  "ort": "Pinneberg",
+  "url": "https://www.drostei.de/programm",
+  "tier": "A"
+ },
+ {
+  "id": "wedel",
+  "name": "Theaterschiff Batavia Wedel",
+  "type": "Theater",
+  "ort": "Wedel",
+  "url": "https://www.batavia-wedel.de/programm/",
+  "tier": "A"
+ },
+ {
+  "id": "ahrensburg",
+  "name": "Alfred-Rust-Saal / Marstall Ahrensburg",
+  "type": "Kulturzentrum",
+  "ort": "Ahrensburg",
+  "url": "https://www.marstall-ahrensburg.de/programm",
+  "tier": "A"
+ },
+ {
+  "id": "reinbek",
+  "name": "Schloss Reinbek",
+  "type": "Kulturzentrum",
+  "ort": "Reinbek",
+  "url": "https://www.schloss-reinbek.de/de/kulturprogramm/veranstaltungskalender/",
+  "tier": "A"
+ },
+ {
+  "id": "buxtehude",
+  "name": "Stadthalle / Kulturforum Buxtehude",
+  "type": "Kulturzentrum",
+  "ort": "Buxtehude",
+  "url": "https://www.mvp.de/niedersachsen/veranstaltungen/ (Buxtehuder Kleinkunst-Igel, Halepaghen-Bühne)",
+  "tier": "A"
+ },
+ {
+  "id": "stade",
+  "name": "Stadeum Stade",
+  "type": "Kulturzentrum",
+  "ort": "Stade",
+  "url": "https://www.stadeum.de/veranstaltungen",
+  "tier": "A"
+ },
+ {
+  "id": "seevetal",
+  "name": "Burg Seevetal / Hittfeld",
+  "type": "Kulturzentrum",
+  "ort": "Seevetal",
+  "url": "https://www.burg-seevetal.de/portal/aseiten/veranstaltungen-1000-10.html",
+  "tier": "A"
+ },
+ {
+  "id": "ewerk",
+  "name": "E-Werk",
+  "type": "Club",
+  "ort": "Köln",
+  "url": "https://www.e-werk-cologne.com/programm/",
+  "tier": "A"
+ },
+ {
+  "id": "palladium",
+  "name": "Palladium",
+  "type": "Club",
+  "ort": "Köln",
+  "url": "https://www.palladium-koeln.de/programm/",
+  "tier": "A"
+ },
+ {
+  "id": "gloria",
+  "name": "Gloria Theater",
+  "type": "Kabarett/Konzert",
+  "ort": "Köln",
+  "url": "https://gloria.koeln/programm",
+  "tier": "A"
+ },
+ {
+  "id": "columbiahalle",
+  "name": "Columbiahalle / Columbia Theater",
+  "type": "Club",
+  "ort": "Berlin",
+  "url": "https://columbiahalle.berlin/veranstaltungen.html",
+  "tier": "A"
+ },
+ {
+  "id": "astra",
+  "name": "Astra Kulturhaus",
+  "type": "Club",
+  "ort": "Berlin",
+  "url": "https://www.astra-berlin.de",
+  "tier": "A"
+ },
+ {
+  "id": "festsaal",
+  "name": "Festsaal Kreuzberg",
+  "type": "Club",
+  "ort": "Berlin",
+  "url": "https://www.festsaal-kreuzberg.de",
+  "tier": "A"
+ },
+ {
+  "id": "lido",
+  "name": "Lido",
+  "type": "Club",
+  "ort": "Berlin",
+  "url": "https://www.lido-berlin.de",
+  "tier": "A"
+ },
+ {
+  "id": "so36",
+  "name": "SO36",
+  "type": "Club",
+  "ort": "Berlin",
+  "url": "https://www.so36.com",
+  "tier": "A"
+ },
+ {
+  "id": "huxleys",
+  "name": "Huxleys Neue Welt",
+  "type": "Club",
+  "ort": "Berlin",
+  "url": "https://huxleysneuewelt.de/events",
+  "tier": "A"
+ },
+ {
+  "id": "centralkomitee",
+  "name": "Centralkomitee",
+  "type": "Comedy/Kabarett",
+  "ort": "St. Georg",
+  "url": "https://tickets.centralkomitee.de/tickets",
+  "tier": "A"
+ },
+ {
+  "id": "kammerspiele",
+  "name": "Hamburger Kammerspiele",
+  "type": "Theater",
+  "ort": "Rotherbaum",
+  "url": "https://hamburger-kammerspiele.de/karten/",
+  "tier": "A"
+ },
+ {
+  "id": "festival-reeperbahn",
+  "name": "Reeperbahn Festival",
+  "type": "Festival",
+  "ort": "St. Pauli",
+  "url": "https://www.reeperbahnfestival.com/",
+  "tier": "A"
+ },
+ {
+  "id": "festival-elbjazz",
+  "name": "ELBJAZZ",
+  "type": "Festival",
+  "ort": "Steinwerder",
+  "url": "https://www.elbjazz.de/",
+  "tier": "A"
+ },
+ {
+  "id": "festival-dockville",
+  "name": "MS Dockville",
+  "type": "Festival",
+  "ort": "Wilhelmsburg",
+  "url": "https://msdockville.de/",
+  "tier": "A"
+ },
+ {
+  "id": "festival-harbourfront",
+  "name": "Harbour Front Literaturfestival",
+  "type": "Festival",
+  "ort": "Hamburg",
+  "url": "https://www.harbourfront-hamburg.com/",
+  "tier": "A"
+ },
+ {
+  "id": "st-katharinen",
+  "name": "Hauptkirche St. Katharinen",
+  "type": "Kirche",
+  "ort": "Hamburg",
+  "url": "https://www.katharinen-hamburg.de/aktuelles/veranstaltungen/kirchenmusik/",
+  "tier": "A"
+ }
+]
