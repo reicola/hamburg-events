@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamburg Event-Cockpit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: nüchterner Spielplan, schnell scannbar, wie ein guter Veranstaltungsteil einer Zeitung
+   IDEA: die Litfaßsäule / der gedruckte Spielplan – große hängende Daten, Titel, Ort
+   PICTURE: die Eventliste selbst, gruppiert nach Monat, mit großen Tagesziffern
+   COLOUR and TYPE: Weiß + Schwarz, Hamburger Rot #d7001b als einziges Signal; Barlow Condensed + Source Sans 3
+   LAYOUT: Kopf mit Stand und Kennzahlen, Ansichten-Tabs, Filterzeile, dann die Liste; Quellen am Ende */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121212);--ink:light-dark(#111111,#f1f1ef);--mute:light-dark(#5d5d5a,#a9a9a4);
+--line:light-dark(#e4e4e0,#2c2c2a);--soft:light-dark(#f4f4f1,#1c1c1b);--red:light-dark(#d7001b,#ff4b5c);--redsoft:light-dark(#fde8ea,#3a1418)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:1240px;margin:0 auto;padding:0 max(4vw,16px)}
+header{border-bottom:3px solid var(--ink);padding:28px 0 18px}
+.top{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:end;justify-content:space-between}
+h1{font:700 clamp(34px,5vw,52px)/1.02 "Barlow Condensed",sans-serif;margin:0;text-wrap:balance}
+h1 b{color:var(--red)}
+.stand{color:var(--mute);font-size:15px;margin-top:6px}
+.kpis{display:flex;flex-wrap:wrap;gap:8px 28px}
+.kpi{font:700 32px/1 "Barlow Condensed",sans-serif}.kpi small{display:block;font:600 13px/1.3 "Source Sans 3";color:var(--mute);margin-top:4px}
+.kpi.r{color:var(--red)}
+nav.tabs{display:flex;flex-wrap:wrap;gap:4px;margin:18px 0 0}
+.tab{font:700 18px/1 "Barlow Condensed",sans-serif;letter-spacing:.01em;padding:12px 14px;min-height:44px;border:0;background:none;color:var(--mute);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-21px}
+.tab[aria-selected=true]{color:var(--ink);border-color:var(--red)}
+.tab .n{font:600 13px "Source Sans 3";margin-left:6px;color:var(--mute)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;padding:26px 0 14px;align-items:center}
+.chip{font:600 15px "Source Sans 3";padding:9px 14px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+input[type=search],select{font:16px "Source Sans 3";padding:9px 12px;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+input[type=search]{flex:1 1 220px}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.hint{font-size:15px;color:var(--mute);margin:4px 0 14px}
+.month{font:700 26px/1 "Barlow Condensed",sans-serif;margin:30px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
+.month span{font:600 14px "Source Sans 3";color:var(--mute)}
+.row{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:4px 16px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}
+.d{font:700 38px/0.9 "Barlow Condensed",sans-serif;white-space:nowrap}.d small{display:block;font:600 13px/1.4 "Source Sans 3";color:var(--mute);margin-top:4px;white-space:nowrap}
+.d.range{font-size:20px;line-height:1.05}
+.t{font-weight:700;font-size:18px;line-height:1.3}
+.t a{color:inherit;text-decoration:none}.t a:hover{text-decoration:underline;text-decoration-color:var(--red)}
+.m{color:var(--mute);font-size:15px;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{font:600 12.5px/1 "Source Sans 3";padding:5px 8px;border-radius:4px;background:var(--soft);color:var(--mute);white-space:nowrap}
+.tag.new{background:var(--red);color:#fff}.tag.warn{background:var(--redsoft);color:var(--red)}
+.star{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--bg);cursor:pointer;display:grid;place-items:center;color:var(--mute)}
+.star svg{width:22px;height:22px}.star[aria-pressed=true]{color:var(--red);border-color:var(--red)}
+.star[aria-pressed=true] svg path{fill:currentColor}
+.acts{display:flex;gap:8px}
+.tix{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--bg);cursor:pointer;display:grid;place-items:center;color:var(--mute)}
+.tix svg{width:22px;height:22px}.tix[aria-pressed=true]{color:#fff;background:var(--red);border-color:var(--red)}
+.tag.tk{background:var(--ink);color:var(--bg)}
+.edit{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:8px;align-items:end;background:var(--soft);padding:12px;border-radius:8px;margin-top:8px}
+.edit label{display:flex;flex-direction:column;font:600 13px "Source Sans 3";color:var(--mute);gap:4px}
+.edit input{font:16px "Source Sans 3";padding:9px 10px;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.edit .q{width:84px}.edit .w{flex:1 1 220px}.edit .w input{width:100%}
+.btn{font:600 15px "Source Sans 3";min-height:44px;padding:0 16px;border-radius:8px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer}
+.btn.ghost{background:none;color:var(--ink);border-color:var(--line)}
+.own{margin:6px 0 10px}
+.empty{padding:48px 0;color:var(--mute);font-size:17px;max-width:60ch}
+details.src{margin:44px 0 60px;border-top:3px solid var(--ink);padding-top:16px}
+details.src summary{font:700 22px "Barlow Condensed",sans-serif;cursor:pointer;min-height:44px}
+.srcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2px 24px;margin-top:12px}
+.srcgrid div{font-size:15px;padding:6px 0;border-bottom:1px solid var(--line)}
+.srcgrid a{color:var(--ink)}.srcgrid em{font-style:normal;color:var(--mute);font-size:13px}
+.note{font-size:14px;color:var(--mute);margin-top:10px}
+.banner{background:var(--soft);padding:12px 14px;border-left:3px solid var(--red);margin:14px 0 0;font-size:15px}
+@media(max-width:600px){.acts{flex-direction:column}.edit{grid-column:1/-1}.row{grid-template-columns:58px minmax(0,1fr) 44px;gap:2px 12px}.d{font-size:30px}.d.range{font-size:16px}.tab{font-size:16px;padding:12px 9px}.kpi{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top">
+    <div><h1>Hamburg <b>Event-Cockpit</b></h1><div class="stand" id="stand">Lade Daten …</div></div>
+    <div class="kpis" id="kpis"></div>
+  </div>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+</div></header>
+<main class="wrap">
+  <div id="banner"></div>
+  <div class="filters" id="filters">
+    <input type="search" id="q" placeholder="Künstler, Titel oder Venue suchen" aria-label="Suche">
+    <select id="region" aria-label="Region"><option value="">Alle Regionen</option><option value="Hamburg">Hamburg & Umgebung</option><option value="Köln">Köln</option><option value="Berlin">Berlin</option></select>
+    <select id="venue" aria-label="Venue"><option value="">Alle Venues</option></select>
+    <select id="month" aria-label="Monat"><option value="">Alle Monate</option></select>
+  </div>
+  <div class="filters" id="cats" style="padding-top:0"></div>
+  <p class="hint" id="hint"></p>
+  <div id="list"></div>
+  <details class="src" id="srcbox"><summary>Quellen</summary><div class="srcgrid" id="srcs"></div>
+    <p class="note">Updates laufen zweimal pro Woche (Montag und Donnerstag früh). Nicht enthalten: Kindertheater, Kurse, Partyreihen. Angaben ohne Gewähr – maßgeblich ist immer die verlinkte Seite des Veranstalters.</p></details>
+</main>
+<script>
+{
+const $=id=>document.getElementById(id);
+const CATS=["Pop & Rock","Klassik & Jazz","Bühne","Show & Comedy","Ausstellung","Messe","Fest & Markt"];
+const VIEWS=[["soon","Demnächst"],["ann","Ankündigungen"],["new","Neu"],["fav","Favoriten"],["tix","Meine Karten"],["expo","Ausstellungen"]];
+const MON=["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+const WD=["So","Mo","Di","Mi","Do","Fr","Sa"];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const TODAY=iso(new Date());
+const plus=(n)=>{const d=new Date();d.setDate(d.getDate()+n);return iso(d)};
+const ANN=plus(90);
+const st={events:[],meta:null,sources:[],favs:{},tix:{},editing:null,prev:null,view:"soon",cats:new Set(),q:"",venue:"",region:"",month:"",uid:null,canFav:false};
+try{const v=localStorage.getItem("hhc-view");if(v)st.view=v}catch(e){}
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl=u=>/^https?:\/\//.test(u||"")?u:null;
+const fmt=s=>{if(!s)return"";const[y,m,d]=s.split("-");return +d+"."+ +m+"."+(y!==TODAY.slice(0,4)?y.slice(2):"")};
+const key=e=>e.date||TODAY;
+const gk=e=>(!e.date||e.date<TODAY)?"0000-00":e.date.slice(0,7);
+const full=s=>{if(!s)return"";const[y,m,d]=s.split("-");return +d+"."+ +m+"."+y};
+const live=e=>(e.end||e.date||"9999")>=TODAY;
+const regionOf=e=>e.ort==="Köln"||e.ort==="Berlin"?e.ort:"Hamburg";
+const isNew=e=>{const m=st.meta;if(st.prev&&e.firstSeen>st.prev)return true;return !!(m&&!m.pilot&&e.firstSeen===m.lastRun)};
+const running=e=>e.date&&e.date<=TODAY&&e.end&&e.end>=TODAY;
+
+function inView(e){
+  if(!live(e))return false;
+  if(st.month&&(st.view==="soon"||st.view==="ann"))return e.cat!=="Ausstellung";
+  switch(st.view){
+    case"soon":return e.cat!=="Ausstellung"&&(e.date||"")<ANN;
+    case"ann":return (e.date||"")>=ANN;
+    case"new":return isNew(e);
+    case"fav":return !!st.favs[e.id];
+    case"tix":return !!st.tix[e.id];
+    case"expo":return e.cat==="Ausstellung";
+  }return true}
+function passes(e){
+  if(st.cats.size&&!st.cats.has(e.cat))return false;
+  if(st.venue&&e.venue!==st.venue)return false;
+  if(st.region&&regionOf(e)!==st.region)return false;
+  if(st.month){const s=(e.date&&e.date>=TODAY?e.date:TODAY).slice(0,7);if(s!==st.month)return false}
+  if(st.q){const h=(e.title+" "+e.venue+" "+(e.district||"")+" "+(e.ort||"")).toLowerCase();if(!h.includes(st.q))return false}
+  return true}
+
+function dateCell(e){
+  if(e.dateText)return `<div class="d range">${esc(e.dateText)}</div>`;
+  if(e.end&&e.end!==e.date){
+    if(!e.date)return `<div class="d range">bis<br>${fmt(e.end)}</div>`;
+    if(running(e))return `<div class="d range">läuft<br><small>bis ${fmt(e.end)}</small></div>`;
+    return `<div class="d range">${fmt(e.date)}<br><small>bis ${fmt(e.end)}</small></div>`}
+  if(!e.date)return `<div class="d range">offen</div>`;
+  const dt=new Date(e.date+"T12:00:00");
+  return `<div class="d">${dt.getDate()}<small>${WD[dt.getDay()]}${e.time?" · "+esc(e.time):""}</small></div>`}
+
+function row(e){
+  const u=safeUrl(e.url),tags=[];
+  if(isNew(e))tags.push('<span class="tag new">Neu</span>');
+  if(e.status)tags.push(`<span class="tag warn">${esc(e.status)}</span>`);
+  tags.push(`<span class="tag">${esc(e.cat)}</span>`);
+  if(e.note)tags.push(`<span class="tag">${esc(e.note)}</span>`);
+  const fav=!!st.favs[e.id],tk=st.tix[e.id];
+  if(tk)tags.unshift(`<span class="tag tk">${tk.qty?esc(tk.qty)+" ":""}${+tk.qty===1?"Karte":"Karten"}${tk.note?" · "+esc(tk.note):""}</span>`);
+  return `<div class="row" id="ev-${esc(e.id)}">${dateCell(e)}
+  <div><div class="t">${u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(e.title)}</a>`:esc(e.title)}</div>
+  <div class="m">${esc(e.venue)}${e.district?" · "+esc(e.district):""}${e.ort&&e.ort!=="Hamburg"?" · "+esc(e.ort):""} · Quelle: ${esc(e.src)}</div>
+  <div class="tags">${tags.join("")}</div></div>
+  <div class="acts"><button class="tix" data-t="${esc(e.id)}" aria-pressed="${!!tk}" aria-label="${tk?"Karten bearbeiten":"Ich habe Karten"}" title="${tk?"Karten bearbeiten":"Ich habe Karten"}" ${st.canFav?"":"disabled"}><svg viewBox="0 0 24 24"><path d="M3.5 8.5V6.8c0-.7.6-1.3 1.3-1.3h14.4c.7 0 1.3.6 1.3 1.3v1.7a2.5 2.5 0 0 0 0 5v1.7c0 .7-.6 1.3-1.3 1.3H4.8c-.7 0-1.3-.6-1.3-1.3v-1.7a2.5 2.5 0 0 0 0-5zM14.5 6v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="0"/></svg></button>
+  <button class="star" data-id="${esc(e.id)}" aria-pressed="${fav}" aria-label="${fav?"Favorit entfernen":"Als Favorit merken"}" ${st.canFav?"":"disabled"}>
+  <svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button></div>${st.editing===e.id?editor(e.id,tk):""}</div>`}
+function editor(id,tk){tk=tk||{};const own=id.startsWith("own-");
+  return `<form class="edit" data-f="${esc(id)}">
+  ${own?`<label class="w">Event<input name="title" required value="${esc(tk.title||"")}"></label><label>Datum<input name="date" type="date" required value="${esc(tk.date||"")}"></label><label class="w">Ort<input name="venue" value="${esc(tk.venue||"")}"></label>`:""}
+  <label>Anzahl<input class="q" name="qty" type="number" min="1" max="99" value="${esc(tk.qty||2)}"></label>
+  <label class="w">Notiz (Platz, mit wem, Abholung …)<input name="note" maxlength="140" value="${esc(tk.note||"")}"></label>
+  <button class="btn" type="submit">Speichern</button>
+  ${st.tix[id]?`<button class="btn ghost" type="button" data-del="${esc(id)}">Karten entfernen</button>`:""}
+  <button class="btn ghost" type="button" data-cancel>Abbrechen</button></form>`}
+function ticketRows(){
+  const byId=Object.fromEntries(st.events.map(e=>[e.id,e]));
+  return Object.entries(st.tix).map(([id,t])=>byId[id]||{id,title:t.title||"Event",date:t.date,venue:t.venue||"",cat:t.cat||"Eigener Eintrag",src:id.startsWith("own-")?"eigener Eintrag":"gespeichert",url:t.url,firstSeen:"0000"})
+    .filter(e=>(e.end||e.date||"9999")>=TODAY)}
+
+function render(){
+  const all=st.events.filter(live);
+  const counts=Object.fromEntries(VIEWS.map(([k])=>{if(k==="tix")return[k,ticketRows().length];const o=st.view;st.view=k;const n=all.filter(inView).length;st.view=o;return[k,n]}));
+  $("tabs").innerHTML=VIEWS.map(([k,l])=>`<button class="tab" role="tab" data-v="${k}" aria-selected="${st.view===k}">${l}<span class="n">${counts[k]}</span></button>`).join("");
+  $("kpis").innerHTML=[[all.length,"Events im Blick"],[counts.ann,"Ankündigungen 90+ Tage"],[counts.new,"Neu",counts.new>0],[counts.fav,"Favoriten"],[counts.tix,"Mit Karten"]]
+    .map(([n,l,r])=>`<div class="kpi${r?" r":""}">${n}<small>${l}</small></div>`).join("");
+  const base=st.view==="tix"?ticketRows():all.filter(inView);
+  const rows=base.filter(passes).sort((a,b)=>gk(a).localeCompare(gk(b))||key(a).localeCompare(key(b))||a.title.localeCompare(b.title));
+  const hints={soon:"Termine der nächsten 90 Tage, ohne Ausstellungen.",ann:"Was schon für die Zeit ab "+fmt(ANN)+" angekündigt ist.",
+    new:st.prev?"Neu seit deinem letzten Besuch am "+fmt(st.prev)+" oder im letzten Update.":"Ab dem nächsten Update erscheinen hier neu gefundene Events.",
+    fav:"Deine gemerkten Events. Sie bleiben bei Updates erhalten.",expo:"Laufende und kommende Ausstellungen.",tix:"Alles, wofür du Karten hast – mit Anzahl und Notiz. Über den Ticket-Knopf an jedem Event eintragen."};
+  $("hint").textContent=(st.month&&(st.view==="soon"||st.view==="ann")?"Alle Termine im gewählten Monat.":hints[st.view])+(rows.length?" "+rows.length+" Treffer.":"");
+  let html="",cur="";
+  if(st.view==="tix"&&st.canFav)html+=st.editing==="own-new"?`<div class="row own"><div></div><div></div><div></div>${editor("own-new",null)}</div>`:`<div class="own"><button class="btn ghost" data-own>+ Karten für ein Event eintragen, das hier nicht steht</button></div>`;
+  if(!rows.length){$("list").innerHTML=html+`<div class="empty">${st.view==="fav"?"Noch keine Favoriten – tippe auf den Stern neben einem Event.":st.view==="tix"?"Noch keine Karten eingetragen – tippe bei einem Event auf das Ticket-Symbol.":"Keine Treffer für diese Auswahl."}</div>`;return}
+  for(const e of rows){
+    const k=gk(e);
+    if(k!==cur){cur=k;const[y,m]=k.split("-");const n=rows.filter(r=>gk(r)===k).length;
+      html+=`<div class="month">${k==="0000-00"?"Läuft gerade":MON[+m-1]+" "+y}<span>${n}</span></div>`}
+    html+=row(e)}
+  $("list").innerHTML=html}
+
+function buildFilters(){
+  $("cats").innerHTML=CATS.map(c=>`<button class="chip" data-c="${esc(c)}" aria-pressed="${st.cats.has(c)}">${esc(c)}</button>`).join("");
+  const vs=[...new Set(st.events.filter(live).filter(e=>!st.region||regionOf(e)===st.region).map(e=>e.venue))].sort((a,b)=>a.localeCompare(b,"de"));
+  $("venue").innerHTML='<option value="">Alle Venues</option>'+vs.map(v=>`<option${v===st.venue?" selected":""}>${esc(v)}</option>`).join("");
+  const ms=[...new Set(st.events.filter(live).map(e=>key(e).slice(0,7)))].filter(m=>m>=TODAY.slice(0,7)).sort();
+  $("month").innerHTML='<option value="">Alle Monate</option>'+ms.map(m=>{const[y,mm]=m.split("-");return`<option value="${m}"${m===st.month?" selected":""}>${MON[+mm-1]} ${y}</option>`}).join("")}
+
+function renderMeta(){
+  const m=st.meta;
+  $("stand").textContent=m?`Stand ${full(m.lastRun)} · ${m.sourcesScanned||"?"} Quellen geprüft · nächstes Update ${m.nextRun?full(m.nextRun):"bald"}`:"Noch kein Update gelaufen";
+  $("banner").innerHTML=m&&m.pilot?`<div class="banner">Pilotlauf: ${esc(m.sourcesScanned)} Quellen erfasst. Mit den regelmäßigen Updates kommen schrittweise alle ${st.sources.length||""} Quellen aus dem Register dazu.</div>`:"";
+  $("srcbox").querySelector("summary").textContent=`Quellen (${st.sources.length})`;
+  $("srcs").innerHTML=st.sources.map(s=>{const u=safeUrl(s.url);return`<div>${u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}<br><em>${esc(s.type)} · ${esc(s.ort)} · ${s.tier==="A"?"jeder Lauf":"wöchentlich"}</em></div>`}).join("")}
+
+document.addEventListener("click",ev=>{
+  const t=ev.target.closest("[data-v]");if(t){st.view=t.dataset.v;try{localStorage.setItem("hhc-view",st.view)}catch(e){}render();return}
+  const c=ev.target.closest("[data-c]");if(c){const k=c.dataset.c;st.cats.has(k)?st.cats.delete(k):st.cats.add(k);c.setAttribute("aria-pressed",st.cats.has(k));render();return}
+  const s=ev.target.closest(".star");if(s&&!s.disabled){toggleFav(s.dataset.id);return}
+  const k=ev.target.closest("[data-t]");if(k&&!k.disabled){st.editing=st.editing===k.dataset.t?null:k.dataset.t;render();const f=document.querySelector(".edit input");f&&f.focus();return}
+  if(ev.target.closest("[data-own]")){st.editing="own-new";render();const f=document.querySelector(".edit input");f&&f.focus();return}
+  if(ev.target.closest("[data-cancel]")){st.editing=null;render();return}
+  const d=ev.target.closest("[data-del]");if(d){delete st.tix[d.dataset.del];st.editing=null;render();persist()}});
+document.addEventListener("submit",ev=>{const f=ev.target.closest("form[data-f]");if(!f)return;ev.preventDefault();
+  const fd=new FormData(f);let id=f.dataset.f;const qty=Math.max(1,Math.min(99,parseInt(fd.get("qty"))||1)),note=String(fd.get("note")||"").trim().slice(0,140);
+  const ev0=st.events.find(e=>e.id===id);let t={qty,note,saved:TODAY};
+  if(id.startsWith("own-")){if(id==="own-new")id="own-"+Date.now().toString(36);t={...t,title:String(fd.get("title")).trim().slice(0,140),date:String(fd.get("date")),venue:String(fd.get("venue")||"").trim().slice(0,80)}}
+  else if(ev0)t={...t,title:ev0.title,date:ev0.date||null,end:ev0.end||null,venue:ev0.venue,cat:ev0.cat,url:ev0.url||null};
+  st.tix[id]=t;st.editing=null;render();persist()});
+let qt;$("q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{st.q=e.target.value.trim().toLowerCase();render()},150)});
+$("venue").addEventListener("change",e=>{st.venue=e.target.value;render()});
+$("region").addEventListener("change",e=>{st.region=e.target.value;st.venue="";try{localStorage.setItem("hhc-region",st.region)}catch(x){}buildFilters();render()});
+try{const r=localStorage.getItem("hhc-region");if(r){st.region=r;$("region").value=r}}catch(x){}
+$("month").addEventListener("change",e=>{st.month=e.target.value;render()});
+
+let stateRef=null,writing=Promise.resolve();
+function save(data){writing=writing.then(()=>stateRef.set(data)).catch(err=>{console.warn(err);if(err&&err.code==="invalid_argument"){st.canFav=false;render()}});return writing}
+function toggleFav(id){
+  if(st.favs[id])delete st.favs[id];else st.favs[id]=TODAY;
+  render();persist()}
+function persist(){return save({favs:{...st.favs},tickets:JSON.parse(JSON.stringify(st.tix)),lastVisit:st.lastVisit||TODAY,prevVisit:st.prev||null})}
+
+render();
+(async()=>{
+  const get=async f=>{const r=await fetch(f+"?v="+Date.now());if(!r.ok)throw new Error(f);return r.json()};
+  try{const [ev,meta,src]=await Promise.all([get("data-events.json"),get("data-meta.json"),get("data-sources.json")]);
+    st.events=ev;st.meta=meta;st.sources=src;buildFilters();renderMeta();render()}
+  catch(e){$("stand").textContent="Eventdaten konnten nicht geladen werden – bitte Seite neu öffnen."}
+  let d={};try{d=JSON.parse(localStorage.getItem("hhc-state")||"{}")}catch(x){}
+  stateRef={set:async v=>{try{localStorage.setItem("hhc-state",JSON.stringify(v))}catch(x){}}};
+  st.favs={...(d.favs||{})};st.tix=JSON.parse(JSON.stringify(d.tickets||{}));
+  if(d.lastVisit&&d.lastVisit!==TODAY){st.prev=d.lastVisit;st.lastVisit=TODAY;st.canFav=true;persist()}
+  else{st.prev=d.prevVisit||null;st.lastVisit=TODAY;st.canFav=true;if(!d.lastVisit)persist()}
+  render()})();
+}
+</script>
+</body>
+</html>
