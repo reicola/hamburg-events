@@ -70,6 +70,9 @@ details.src summary{font:700 22px "Barlow Condensed",sans-serif;cursor:pointer;m
 .srcgrid a{color:var(--ink)}.srcgrid em{font-style:normal;color:var(--mute);font-size:13px}
 .note{font-size:14px;color:var(--mute);margin-top:10px}
 .banner{background:var(--soft);padding:12px 14px;border-left:3px solid var(--red);margin:14px 0 0;font-size:15px}
+.info{margin:18px 0 0;background:var(--soft);border-left:3px solid var(--red);padding:10px 14px;font-size:15px}
+.info summary{font-weight:700;cursor:pointer;min-height:32px}
+.info ul{margin:6px 0 4px;padding-left:20px}.info li{margin:3px 0}
 @media(max-width:600px){.acts{flex-direction:column}.edit{grid-column:1/-1}.row{grid-template-columns:58px minmax(0,1fr) 44px;gap:2px 12px}.d{font-size:30px}.d.range{font-size:16px}.tab{font-size:16px;padding:12px 9px}.kpi{font-size:26px}}
 </style>
 </head>
@@ -82,6 +85,15 @@ details.src summary{font:700 22px "Barlow Condensed",sans-serif;cursor:pointer;m
   <nav class="tabs" id="tabs" role="tablist"></nav>
 </div></header>
 <main class="wrap">
+  <details class="info" id="info">
+    <summary>Hinweise zu den Daten</summary>
+    <ul>
+      <li><b>Aktualisierung:</b> Die Termine werden montags und donnerstags automatisch von den Programmseiten der Veranstaltungsorte und von Ticketportalen eingesammelt. Maßgeblich sind immer die Angaben des Veranstalters – bitte vor dem Kauf dort prüfen.</li>
+      <li><b>Noch nicht vollständig:</b> Gut abgedeckt sind die großen Häuser (Elbphilharmonie, Laeiszhalle, Arenen, Thalia, Schauspielhaus, Kammerspiele) und die wichtigen Clubs. Lücken gibt es noch bei kleineren Comedy- und Gastspielbühnen, beim CCH, bei großen Open-Air-Konzerten im Sommer, bei einigen kleinen Clubs sowie bei Kirchenkonzerten und einzelnen Museen. Viele Häuser veröffentlichen ihr Programm außerdem erst wenige Monate im Voraus.</li>
+      <li><b>Nicht enthalten:</b> Kinder- und Familienprogramm, Partys, Kurse, Sport, Weihnachtsmärkte und Musicals.</li>
+      <li><b>Favoriten und Karten</b> werden nur in diesem Browser auf diesem Gerät gespeichert – nicht online. Auf einem anderen Gerät oder nach dem Löschen der Browserdaten sind sie nicht da. Die automatischen Updates überschreiben sie nicht.</li>
+    </ul>
+  </details>
   <div id="banner"></div>
   <div class="filters" id="filters">
     <input type="search" id="q" placeholder="Künstler, Titel oder Venue suchen" aria-label="Suche">
@@ -253,5 +265,6 @@ render();
   render()})();
 }
 </script>
+<script>try{const i=document.getElementById("info");if(localStorage.getItem("hhc-info")!=="zu")i.open=true;i.addEventListener("toggle",()=>{try{localStorage.setItem("hhc-info",i.open?"auf":"zu")}catch(x){}})}catch(x){}</script>
 </body>
 </html>
