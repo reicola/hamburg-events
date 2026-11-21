@@ -671,5 +671,69 @@
   "ort": "Hamburg",
   "url": "https://www.katharinen-hamburg.de/aktuelles/veranstaltungen/kirchenmusik/",
   "tier": "A"
+ },
+ {
+  "id": "bi-0",
+  "name": "Stadthalle / Seidensticker Halle Bielefeld",
+  "type": "Halle",
+  "ort": "Bielefeld",
+  "url": "https://www.stadthalle-bielefeld.de/fuer-besucher/veranstaltungen",
+  "tier": "A"
+ },
+ {
+  "id": "bi-1",
+  "name": "Rudolf-Oetker-Halle Bielefeld",
+  "type": "Konzerthaus",
+  "ort": "Bielefeld",
+  "url": "https://www.buo-bielefeld.de/rudolf-oetker-halle/kalender",
+  "tier": "A"
+ },
+ {
+  "id": "bi-2",
+  "name": "Lokschuppen Bielefeld",
+  "type": "Club",
+  "ort": "Bielefeld",
+  "url": "https://www.songkick.com/venues/29661-lokschuppen/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "bi-3",
+  "name": "Forum Bielefeld",
+  "type": "Club",
+  "ort": "Bielefeld",
+  "url": "https://www.songkick.com/venues/2011354-forum-bielefeld/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "bi-4",
+  "name": "Bunker Ulmenwall",
+  "type": "Club",
+  "ort": "Bielefeld",
+  "url": "https://www.songkick.com/venues/198203-bunker-ulmenwall/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "bi-5",
+  "name": "Movie Bielefeld",
+  "type": "Club",
+  "ort": "Bielefeld",
+  "url": "https://www.songkick.com/venues/198168-movie/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "bi-6",
+  "name": "Nr. z. P. Bielefeld",
+  "type": "Club",
+  "ort": "Bielefeld",
+  "url": "https://www.songkick.com/venues/1800603-nr-z-p/calendar",
+  "tier": "A"
+ },
+ {
+  "id": "bi-7",
+  "name": "Kunsthalle Bielefeld",
+  "type": "Museum",
+  "ort": "Bielefeld",
+  "url": "https://kunsthalle-bielefeld.de/programm/ausstellungen/",
+  "tier": "A"
  }
 ]

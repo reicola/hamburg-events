@@ -89,7 +89,7 @@ details.src summary{font:700 22px "Barlow Condensed",sans-serif;cursor:pointer;m
     <summary>Hinweise zu den Daten</summary>
     <ul>
       <li><b>Aktualisierung:</b> Die Termine werden montags und donnerstags automatisch von den Programmseiten der Veranstaltungsorte und von Ticketportalen eingesammelt. Maßgeblich sind immer die Angaben des Veranstalters – bitte vor dem Kauf dort prüfen.</li>
-      <li><b>Noch nicht vollständig:</b> Gut abgedeckt sind die großen Häuser (Elbphilharmonie, Laeiszhalle, Arenen, Thalia, Schauspielhaus, Kammerspiele) und die wichtigen Clubs. Inzwischen auch Gastspielbühnen (St. Pauli Theater, Ernst Deutsch, Alma Hoppe, Schmidt/Tivoli), CCH, Stadtpark und Stadion-Open-Airs, kleine Clubs sowie Michel, St. Katharinen und weitere Museen. Kleinere Lücken gibt es noch bei Polittbüro, St. Jacobi, der Musikhochschule und beim Open-Air-Programm der Trabrennbahn 2027. Viele Häuser veröffentlichen ihr Programm außerdem erst wenige Monate im Voraus.</li>
+      <li><b>Noch nicht vollständig:</b> Gut abgedeckt sind die großen Häuser (Elbphilharmonie, Laeiszhalle, Arenen, Thalia, Schauspielhaus, Kammerspiele) und die wichtigen Clubs. Inzwischen auch Gastspielbühnen (St. Pauli Theater, Ernst Deutsch, Alma Hoppe, Schmidt/Tivoli), CCH, Stadtpark und Stadion-Open-Airs, kleine Clubs sowie Michel, St. Katharinen und weitere Museen. Bielefeld (Stadthalle, Rudolf-Oetker-Halle, Lokschuppen, Forum und Clubs) ist als eigene Region auswählbar. Kleinere Lücken gibt es noch bei Polittbüro, St. Jacobi, der Musikhochschule und beim Open-Air-Programm der Trabrennbahn 2027. Viele Häuser veröffentlichen ihr Programm außerdem erst wenige Monate im Voraus.</li>
       <li><b>Nicht enthalten:</b> Kinder- und Familienprogramm, Partys, Kurse, Sport, Weihnachtsmärkte und Musicals.</li>
       <li><b>Favoriten und Karten</b> werden nur in diesem Browser auf diesem Gerät gespeichert – nicht online. Auf einem anderen Gerät oder nach dem Löschen der Browserdaten sind sie nicht da. Die automatischen Updates überschreiben sie nicht.</li>
     </ul>
@@ -97,7 +97,7 @@ details.src summary{font:700 22px "Barlow Condensed",sans-serif;cursor:pointer;m
   <div id="banner"></div>
   <div class="filters" id="filters">
     <input type="search" id="q" placeholder="Künstler, Titel oder Venue suchen" aria-label="Suche">
-    <select id="region" aria-label="Region"><option value="">Alle Regionen</option><option value="Hamburg">Hamburg & Umgebung</option><option value="Köln">Köln</option><option value="Berlin">Berlin</option></select>
+    <select id="region" aria-label="Region"><option value="">Alle Regionen</option><option value="Hamburg">Hamburg & Umgebung</option><option value="Köln">Köln</option><option value="Berlin">Berlin</option><option value="Bielefeld">Bielefeld</option></select>
     <select id="venue" aria-label="Venue"><option value="">Alle Venues</option></select>
     <select id="month" aria-label="Monat"><option value="">Alle Monate</option></select>
   </div>
@@ -127,7 +127,7 @@ const key=e=>e.date||TODAY;
 const gk=e=>(!e.date||e.date<TODAY)?"0000-00":e.date.slice(0,7);
 const full=s=>{if(!s)return"";const[y,m,d]=s.split("-");return +d+"."+ +m+"."+y};
 const live=e=>(e.end||e.date||"9999")>=TODAY;
-const regionOf=e=>e.ort==="Köln"||e.ort==="Berlin"?e.ort:"Hamburg";
+const regionOf=e=>["Köln","Berlin","Bielefeld"].includes(e.ort)?e.ort:"Hamburg";
 const isNew=e=>{const m=st.meta;if(st.prev&&e.firstSeen>st.prev)return true;return !!(m&&!m.pilot&&e.firstSeen===m.lastRun)};
 const running=e=>e.date&&e.date<=TODAY&&e.end&&e.end>=TODAY;
 
