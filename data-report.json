@@ -1,7 +1,7 @@
 {
  "run": "2026-11-22",
- "note": "Sonderlauf: Quellen bereinigt, Spielorte vereinheitlicht, Uhrzeiten und Lesungen ergänzt",
- "total": 3450,
+ "note": "Sonderlauf: Quellen bereinigt (u. a. KörberForum, Hafenbahnhof, Cascadas, Hebebühne, Haus 73, JazzHall ausgeschlossen), Spielorte vereinheitlicht, Uhrzeiten und Lesungen ergänzt",
+ "total": 3449,
  "added": 13,
  "changed": 316,
  "removed": 53,
@@ -15,22 +15,22 @@
   "Trabrennbahn (Programm 2027 noch nicht veröffentlicht)"
  ],
  "coverage": {
-  "sample": 89,
-  "found": 54,
-  "rate": 61,
+  "sample": 77,
+  "found": 53,
+  "rate": 69,
   "source": "rausgegangen.de (Zufallsstichprobe)",
   "byCat": {
-   "Gesprochenes": [
-    9,
-    18
-   ],
    "Konzerte & Musik": [
     35,
-    53
+    45
    ],
    "Shows & Performances": [
     7,
-    11
+    10
+   ],
+   "Gesprochenes": [
+    8,
+    15
    ],
    "Theater": [
     3,
@@ -38,17 +38,11 @@
    ]
   },
   "missingVenues": [
-   "KörberForum",
-   "Hafenbahnhof",
    "Hafenklang",
-   "JazzHall",
-   "Cascadas",
-   "Hebebühne",
    "Indra Musikclub",
    "Friedrich-Ebert-Halle Harburg",
    "KulturKlinker Barmbek",
    "a&o Hostel Hamburg City",
-   "Haus 73",
    "Hamburger Kammerspiele",
    "Theaterschiff",
    "Slot",
@@ -57,7 +51,13 @@
    "MS Stubnitz",
    "Marias Ballroom",
    "Molotow Musikclub",
-   "Bahnhof Pauli"
+   "Bahnhof Pauli",
+   "Kehrwieder Theater",
+   "Bucerius Law School",
+   "Albatros Café",
+   "Nochtspeicher",
+   "TONALi SAAL",
+   "Hamburger Sprechwerk"
   ]
  }
 }
