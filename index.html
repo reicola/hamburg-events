@@ -257,7 +257,9 @@ function vevent(e,mode){
 function downloadIcs(list,name,mode){
   const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Event-Cockpit//DE","CALSCALE:GREGORIAN","METHOD:PUBLISH",...TZ];
   list.forEach(e=>L.push(...vevent(e,mode)));L.push("END:VCALENDAR");
-  const blob=new Blob([L.map(fold).join("\r\n")],{type:"text/calendar;charset=utf-8"});
+  const body=L.map(fold).join("\r\n"),fname=name.replace(/[^\wäöüÄÖÜß.-]+/g,"-").slice(0,60)+".ics";
+  if(typeof claude!=="undefined"&&claude&&claude.use){claude.use("downloads").then(dl=>{if(!dl)throw 0;return dl.save({filename:fname,data:body})}).then(()=>toast("Kalenderdatei gespeichert – öffnen, um sie zu übernehmen")).catch(()=>toast("Speichern abgebrochen"));return}
+  const blob=new Blob([body],{type:"text/calendar;charset=utf-8"});
   const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name.replace(/[^\wäöüÄÖÜß.-]+/g,"-").slice(0,60)+".ics";document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);
   toast(list.length===1?"Kalenderdatei geladen – öffnen, um sie zu übernehmen":list.length+" Termine als Kalenderdatei geladen")}
 
