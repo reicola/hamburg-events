@@ -136,14 +136,6 @@
   "tier": "A"
  },
  {
-  "id": "messe",
-  "name": "Hamburg Messe",
-  "type": "Messe",
-  "ort": "St. Pauli",
-  "url": "https://www.hamburg-messe.de/de/messen-und-events/",
-  "tier": "A"
- },
- {
   "id": "georg-elser",
   "name": "Georg Elser Halle",
   "type": "Halle",
@@ -473,14 +465,6 @@
   "note": "ohne Altonaer Museum und Museum der Arbeit"
  },
  {
-  "id": "oberhafen",
-  "name": "Oberhafen / Phoxxi / Galerien",
-  "type": "Galerie",
-  "ort": "HafenCity",
-  "url": "https://www.oberhafen.net",
-  "tier": "B"
- },
- {
   "id": "norderstedt-tribuehne",
   "name": "TriBühne / Kulturwerk am See Norderstedt",
   "type": "Theater",
@@ -489,27 +473,11 @@
   "tier": "A"
  },
  {
-  "id": "pinneberg",
-  "name": "Kulturzentrum Drostei / Pinneberg",
-  "type": "Kulturzentrum",
-  "ort": "Pinneberg",
-  "url": "https://www.drostei.de/programm",
-  "tier": "A"
- },
- {
   "id": "wedel",
   "name": "Theaterschiff Batavia Wedel",
   "type": "Theater",
   "ort": "Wedel",
   "url": "https://www.batavia-wedel.de/programm/",
-  "tier": "A"
- },
- {
-  "id": "ahrensburg",
-  "name": "Alfred-Rust-Saal / Marstall Ahrensburg",
-  "type": "Kulturzentrum",
-  "ort": "Ahrensburg",
-  "url": "https://www.marstall-ahrensburg.de/programm",
   "tier": "A"
  },
  {

@@ -1,0 +1,894 @@
+[
+{
+"name": "Alma Hoppes Lustspielhaus",
+"ort": "Hamburg",
+"district": "Eppendorf",
+"group": "",
+"aliases": [],
+"lat": 53.5931,
+"lon": 9.99263,
+"address": "Ludolfstraße 53, Hamburg"
+},
+{
+"name": "Astra Kulturhaus",
+"ort": "Berlin",
+"district": "Friedrichshain",
+"group": "",
+"aliases": [],
+"lat": 52.50602,
+"lon": 13.456,
+"address": "Revaler Straße 99, Berlin"
+},
+{
+"name": "Aula Süd Buxtehude",
+"ort": "Buxtehude",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.46037,
+"lon": 9.68689,
+"approx": true
+},
+{
+"name": "Bahnhof Pauli",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54914,
+"lon": 9.96439,
+"address": "Spielbudenplatz 21, Hamburg"
+},
+{
+"name": "Barclays Arena",
+"ort": "Hamburg",
+"district": "Bahrenfeld",
+"group": "",
+"aliases": [],
+"lat": 53.58892,
+"lon": 9.89983,
+"address": "Sylvesterallee 10, Hamburg"
+},
+{
+"name": "Betty",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54964,
+"lon": 9.95745,
+"approx": true
+},
+{
+"name": "Bucerius Kunst Forum",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "",
+"aliases": [],
+"lat": 53.5507,
+"lon": 9.99094,
+"address": "Alter Wall 12, Hamburg"
+},
+{
+"name": "Bunker Ulmenwall",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.01724,
+"lon": 8.52473,
+"approx": true
+},
+{
+"name": "Burg Seevetal",
+"ort": "Seevetal",
+"district": "Hittfeld",
+"group": "",
+"aliases": [],
+"lat": 53.38705,
+"lon": 9.97986,
+"address": "Am Göhlenbach 11, Seevetal"
+},
+{
+"name": "CCH – Congress Center Hamburg",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.56151,
+"lon": 9.9863,
+"address": "Congressplatz 1, Hamburg"
+},
+{
+"name": "Centralkomitee",
+"ort": "Hamburg",
+"district": "St. Georg",
+"group": "",
+"aliases": [],
+"lat": 53.55491,
+"lon": 10.01456,
+"address": "Steindamm 45, Hamburg"
+},
+{
+"name": "Columbia Theater",
+"ort": "Berlin",
+"district": "Kreuzberg",
+"group": "",
+"aliases": [],
+"lat": 52.48473,
+"lon": 13.39144
+},
+{
+"name": "Columbiahalle",
+"ort": "Berlin",
+"district": "Kreuzberg",
+"group": "",
+"aliases": [],
+"lat": 52.48474,
+"lon": 13.39255,
+"address": "Columbiadamm 13, Berlin"
+},
+{
+"name": "Deichtorhallen – Halle für aktuelle Kunst",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "Deichtorhallen",
+"aliases": [],
+"lat": 53.54724,
+"lon": 10.00676,
+"address": "Deichtorstraße 1, Hamburg"
+},
+{
+"name": "Deutsches Schauspielhaus",
+"ort": "Hamburg",
+"district": "St. Georg",
+"group": "",
+"aliases": [],
+"lat": 53.5545,
+"lon": 10.00894,
+"address": "Kirchenallee 39, Hamburg"
+},
+{
+"name": "Docks",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54921,
+"lon": 9.96458,
+"address": "Spielbudenplatz 19, Hamburg"
+},
+{
+"name": "E-Werk",
+"ort": "Köln",
+"district": "Mülheim",
+"group": "",
+"aliases": [],
+"lat": 50.97012,
+"lon": 7.0158,
+"address": "Schanzenstraße 37, Köln"
+},
+{
+"name": "Elbphilharmonie Großer Saal",
+"ort": "Hamburg",
+"district": "HafenCity",
+"group": "Elbphilharmonie",
+"aliases": [],
+"lat": 53.54129,
+"lon": 9.98421,
+"address": "Platz der Deutschen Einheit 1, Hamburg"
+},
+{
+"name": "Elbphilharmonie Kleiner Saal",
+"ort": "Hamburg",
+"district": "HafenCity",
+"group": "Elbphilharmonie",
+"aliases": [],
+"lat": 53.54129,
+"lon": 9.98421,
+"address": "Platz der Deutschen Einheit 1, Hamburg"
+},
+{
+"name": "Ernst Barlach Haus",
+"ort": "Hamburg",
+"district": "Othmarschen",
+"group": "",
+"aliases": [],
+"lat": 53.55364,
+"lon": 9.86766,
+"address": "Baron-Voght-Straße 50a, Hamburg"
+},
+{
+"name": "Ernst Deutsch Theater",
+"ort": "Hamburg",
+"district": "Uhlenhorst",
+"group": "",
+"aliases": [],
+"lat": 53.56924,
+"lon": 10.0262,
+"address": "Friedrich-Schütter-Platz 1, Hamburg"
+},
+{
+"name": "Fabrik",
+"ort": "Hamburg",
+"district": "Ottensen",
+"group": "",
+"aliases": [],
+"lat": 53.55674,
+"lon": 9.92919,
+"address": "Barnerstraße 36, Hamburg"
+},
+{
+"name": "Festsaal Kreuzberg",
+"ort": "Berlin",
+"district": "Treptow",
+"group": "",
+"aliases": [],
+"lat": 52.49682,
+"lon": 13.45156,
+"address": "Am Flutgraben 2, Berlin"
+},
+{
+"name": "Forum Bielefeld",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.03084,
+"lon": 8.52956,
+"address": "Meller Straße 2, Bielefeld"
+},
+{
+"name": "Georg Elser Halle",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55651,
+"lon": 9.9701
+},
+{
+"name": "Gloria Theater",
+"ort": "Köln",
+"district": "Innenstadt",
+"group": "",
+"aliases": [],
+"lat": 50.93749,
+"lon": 6.94495,
+"address": "Apostelnstraße 11, Köln"
+},
+{
+"name": "Große Freiheit 36",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55111,
+"lon": 9.95808
+},
+{
+"name": "Grünspan",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55181,
+"lon": 9.95839,
+"address": "Große Freiheit 58, Hamburg"
+},
+{
+"name": "Hafenklang",
+"ort": "Hamburg",
+"district": "Altona",
+"group": "",
+"aliases": [],
+"lat": 53.54456,
+"lon": 9.94795,
+"address": "Große Elbstraße 84, Hamburg"
+},
+{
+"name": "Halepaghen-Bühne Buxtehude",
+"ort": "Buxtehude",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.47674,
+"lon": 9.69373,
+"address": "Konopkastraße 5, Buxtehude"
+},
+{
+"name": "Hamburger Kammerspiele",
+"ort": "Hamburg",
+"district": "Rotherbaum",
+"group": "",
+"aliases": [],
+"lat": 53.56993,
+"lon": 9.9854,
+"address": "Hartungstraße 9, Hamburg"
+},
+{
+"name": "Hamburger Kunsthalle",
+"ort": "Hamburg",
+"district": "St. Georg",
+"group": "",
+"aliases": [],
+"lat": 53.55529,
+"lon": 10.003,
+"address": "Glockengießerwall 5, Hamburg"
+},
+{
+"name": "Hauptkirche St. Katharinen",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "",
+"aliases": [],
+"lat": 53.54596,
+"lon": 9.99445,
+"address": "Katharinenkirchhof 1, Hamburg"
+},
+{
+"name": "Hauptkirche St. Michaelis",
+"ort": "Hamburg",
+"district": "Neustadt",
+"group": "",
+"aliases": [],
+"lat": 53.54887,
+"lon": 9.97825,
+"address": "Englische Planke 1, Hamburg"
+},
+{
+"name": "Hebebühne",
+"ort": "Hamburg",
+"district": "Ottensen",
+"group": "",
+"aliases": [],
+"lat": 53.55707,
+"lon": 9.92989
+},
+{
+"name": "Heiligengeistfeld",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55436,
+"lon": 9.97097
+},
+{
+"name": "Huxleys Neue Welt",
+"ort": "Berlin",
+"district": "Neukölln",
+"group": "",
+"aliases": [],
+"lat": 52.48643,
+"lon": 13.4215,
+"address": "Hasenheide 107, Berlin"
+},
+{
+"name": "Indra",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55209,
+"lon": 9.95826,
+"address": "Große Freiheit 64, Hamburg"
+},
+{
+"name": "Inselpark Arena",
+"ort": "Hamburg",
+"district": "Wilhelmsburg",
+"group": "",
+"aliases": [],
+"lat": 53.49558,
+"lon": 10.00242,
+"address": "Kurt-Emmerich-Platz 10, Hamburg"
+},
+{
+"name": "Kampnagel",
+"ort": "Hamburg",
+"district": "Winterhude",
+"group": "",
+"aliases": [],
+"lat": 53.5833,
+"lon": 10.02217,
+"address": "Jarrestraße 20, Hamburg"
+},
+{
+"name": "Kent Club",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [
+"KENT Club"
+],
+"lat": 53.54964,
+"lon": 9.95745,
+"approx": true
+},
+{
+"name": "Knust",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55808,
+"lon": 9.96783,
+"address": "Neuer Kamp 30, Hamburg"
+},
+{
+"name": "Kulturkirche Altona",
+"ort": "Hamburg",
+"district": "Altona",
+"group": "",
+"aliases": [],
+"lat": 53.5607,
+"lon": 9.95313,
+"address": "Max-Brauer-Allee 199, Hamburg"
+},
+{
+"name": "Kulturwerk am See (TriBühne)",
+"ort": "Norderstedt",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.70791,
+"lon": 9.99371,
+"address": "Rathausallee 50, Norderstedt"
+},
+{
+"name": "Kunsthalle Bielefeld",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.01812,
+"lon": 8.52615,
+"address": "Artur-Ladebeck-Straße 5, Bielefeld"
+},
+{
+"name": "Kunsthaus Hamburg",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "",
+"aliases": [],
+"lat": 53.54885,
+"lon": 10.00662,
+"address": "Klosterwall 15, Hamburg"
+},
+{
+"name": "Kunstverein in Hamburg",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "",
+"aliases": [],
+"lat": 53.54837,
+"lon": 10.00663,
+"address": "Klosterwall 23, Hamburg"
+},
+{
+"name": "Laeiszhalle Großer Saal",
+"ort": "Hamburg",
+"district": "Neustadt",
+"group": "Laeiszhalle",
+"aliases": [
+"Laeiszhalle"
+],
+"lat": 53.55482,
+"lon": 9.97926,
+"address": "Johannes-Brahms-Platz 1, Hamburg"
+},
+{
+"name": "Laeiszhalle Kleiner Saal",
+"ort": "Hamburg",
+"district": "Neustadt",
+"group": "Laeiszhalle",
+"aliases": [],
+"lat": 53.55482,
+"lon": 9.97926,
+"address": "Johannes-Brahms-Platz 1, Hamburg"
+},
+{
+"name": "Lido",
+"ort": "Berlin",
+"district": "Kreuzberg",
+"group": "",
+"aliases": [],
+"lat": 52.4991,
+"lon": 13.44511,
+"address": "Cuvrystraße 7, Berlin"
+},
+{
+"name": "Literaturhaus Hamburg",
+"ort": "Hamburg",
+"district": "Uhlenhorst",
+"group": "",
+"aliases": [],
+"lat": 53.56817,
+"lon": 10.01678,
+"address": "Schwanenwik 38, Hamburg"
+},
+{
+"name": "Logo",
+"ort": "Hamburg",
+"district": "Rotherbaum",
+"group": "",
+"aliases": [],
+"lat": 53.56451,
+"lon": 9.9836,
+"address": "Grindelallee 5, Hamburg"
+},
+{
+"name": "Lokschuppen",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.03655,
+"lon": 8.55145,
+"address": "Stadtheider Straße 11, Bielefeld"
+},
+{
+"name": "MARKK",
+"ort": "Hamburg",
+"district": "Rotherbaum",
+"group": "",
+"aliases": [],
+"lat": 53.56862,
+"lon": 9.98917,
+"address": "Rothenbaumchaussee 64, Hamburg"
+},
+{
+"name": "MS Uferpark",
+"ort": "Hamburg",
+"district": "Wilhelmsburg",
+"group": "",
+"aliases": [],
+"lat": 53.5051,
+"lon": 9.97116,
+"address": "Wollkämmereistraße 1, Hamburg"
+},
+{
+"name": "Markthalle",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "",
+"aliases": [],
+"lat": 53.54241,
+"lon": 10.02509,
+"address": "Amsinckstraße 70, Hamburg"
+},
+{
+"name": "Mojo Club",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54968,
+"lon": 9.96761,
+"address": "Reeperbahn 1, Hamburg"
+},
+{
+"name": "Molotow",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55012,
+"lon": 9.95651,
+"address": "Nobistor 14, Hamburg"
+},
+{
+"name": "Movie",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.02814,
+"lon": 8.53261,
+"address": "Am Bahnhof 6, Bielefeld"
+},
+{
+"name": "Museum für Kunst und Gewerbe",
+"ort": "Hamburg",
+"district": "St. Georg",
+"group": "",
+"aliases": [
+"Museum für Kunst und Gewerbe (MKG)"
+],
+"lat": 53.55129,
+"lon": 10.00933,
+"address": "Steintorplatz, Hamburg"
+},
+{
+"name": "Nochtspeicher",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54723,
+"lon": 9.96131,
+"address": "Bernhard-Nocht-Straße 69a, Hamburg"
+},
+{
+"name": "Nr. z. P.",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.0191,
+"lon": 8.53101,
+"approx": true
+},
+{
+"name": "Open Air am Volkspark",
+"ort": "Hamburg",
+"district": "Bahrenfeld",
+"group": "",
+"aliases": [],
+"lat": 53.57738,
+"lon": 9.88945,
+"address": "Luruper Chaussee 30, Hamburg"
+},
+{
+"name": "PHOXXI – Haus der Photographie temporär",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "Deichtorhallen",
+"aliases": [
+"PHOXXI (Deichtorhallen)"
+],
+"lat": 53.54633,
+"lon": 10.00621,
+"address": "Deichtorstraße 2, Hamburg"
+},
+{
+"name": "Palladium",
+"ort": "Köln",
+"district": "Mülheim",
+"group": "",
+"aliases": [],
+"lat": 50.96898,
+"lon": 7.01682,
+"address": "Schanzenstraße 40, Köln"
+},
+{
+"name": "Ratsaal Buxtehude",
+"ort": "Buxtehude",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.47403,
+"lon": 9.69588,
+"address": "Bahnhofstraße 7, Buxtehude"
+},
+{
+"name": "Reeperbahn (diverse Clubs)",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54964,
+"lon": 9.95745,
+"approx": true
+},
+{
+"name": "Reiherstieg Wilhelmsburg",
+"ort": "Hamburg",
+"district": "Wilhelmsburg",
+"group": "",
+"aliases": [],
+"lat": 53.50165,
+"lon": 9.97526
+},
+{
+"name": "Rudolf-Oetker-Halle",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.02826,
+"lon": 8.5132,
+"address": "Lampingstraße 16, Bielefeld"
+},
+{
+"name": "SO36",
+"ort": "Berlin",
+"district": "Kreuzberg",
+"group": "",
+"aliases": [],
+"lat": 52.50039,
+"lon": 13.42216,
+"address": "Oranienstraße 190, Berlin"
+},
+{
+"name": "Sammlung Falckenberg",
+"ort": "Hamburg",
+"district": "Harburg",
+"group": "Deichtorhallen",
+"aliases": [],
+"lat": 53.45509,
+"lon": 9.98756,
+"address": "Wilstorfer Straße 71, Hamburg"
+},
+{
+"name": "Schloss Reinbek",
+"ort": "Reinbek",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.5073,
+"lon": 10.25414,
+"address": "Schloßstraße 5, Reinbek"
+},
+{
+"name": "Schmidt Theater",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "Schmidt",
+"aliases": [],
+"lat": 53.54914,
+"lon": 9.96387,
+"address": "Spielbudenplatz 24, Hamburg"
+},
+{
+"name": "Schmidtchen",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "Schmidt",
+"aliases": [],
+"address": "Spielbudenplatz 27, Hamburg",
+"lat": 53.54913,
+"lon": 9.96334
+},
+{
+"name": "Schmidts Tivoli",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "Schmidt",
+"aliases": [],
+"lat": 53.54913,
+"lon": 9.96334,
+"address": "Spielbudenplatz 27, Hamburg"
+},
+{
+"name": "Seidensticker Halle",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.02575,
+"lon": 8.55114,
+"address": "Werner-Bock-Straße 35, Bielefeld"
+},
+{
+"name": "Sporthalle Hamburg",
+"ort": "Hamburg",
+"district": "Winterhude",
+"group": "",
+"aliases": [],
+"lat": 53.60272,
+"lon": 10.00206,
+"address": "Krochmannstraße 55, Hamburg"
+},
+{
+"name": "St. Pauli Theater",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.54911,
+"lon": 9.9631,
+"address": "Spielbudenplatz 29, Hamburg"
+},
+{
+"name": "Staatsoper Hamburg",
+"ort": "Hamburg",
+"district": "Neustadt",
+"group": "",
+"aliases": [],
+"lat": 53.55667,
+"lon": 9.98893,
+"address": "Große Theaterstraße 25, Hamburg"
+},
+{
+"name": "Stadeum Stade",
+"ort": "Stade",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.60435,
+"lon": 9.47059,
+"address": "Schiffertorsstraße 6, Stade"
+},
+{
+"name": "Stadthalle Bielefeld",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.02863,
+"lon": 8.53548,
+"address": "Willy-Brandt-Platz 1, Bielefeld"
+},
+{
+"name": "Stadtpark Open Air",
+"ort": "Hamburg",
+"district": "Winterhude",
+"group": "",
+"aliases": [],
+"lat": 53.59748,
+"lon": 10.03074,
+"address": "Saarlandstraße 71, Hamburg"
+},
+{
+"name": "Thalia Gaußstraße",
+"ort": "Hamburg",
+"district": "Ottensen",
+"group": "Thalia",
+"aliases": [],
+"lat": 53.55932,
+"lon": 9.92546,
+"address": "Gaußstraße 190, Hamburg"
+},
+{
+"name": "Thalia Theater",
+"ort": "Hamburg",
+"district": "Altstadt",
+"group": "Thalia",
+"aliases": [],
+"lat": 53.55175,
+"lon": 9.99818,
+"address": "Alstertor 1, Hamburg"
+},
+{
+"name": "Theater Bielefeld",
+"ort": "Bielefeld",
+"district": "Mitte",
+"group": "",
+"aliases": [],
+"lat": 52.02079,
+"lon": 8.53595,
+"address": "Brunnenstraße 3, Bielefeld"
+},
+{
+"name": "Theaterschiff Batavia",
+"ort": "Wedel",
+"district": "",
+"group": "",
+"aliases": [],
+"lat": 53.58203,
+"lon": 9.69535,
+"address": "Brooksdamm 1, Wedel"
+},
+{
+"name": "Uebel & Gefährlich",
+"ort": "Hamburg",
+"district": "St. Pauli",
+"group": "",
+"aliases": [],
+"lat": 53.55635,
+"lon": 9.97014,
+"address": "Feldstraße 66, Hamburg"
+},
+{
+"name": "Volksparkstadion",
+"ort": "Hamburg",
+"district": "Bahrenfeld",
+"group": "",
+"aliases": [],
+"lat": 53.58773,
+"lon": 9.90027,
+"address": "Sylvesterallee 7, Hamburg"
+},
+{
+"name": "Werftgelände Blohm+Voss",
+"ort": "Hamburg",
+"district": "Steinwerder",
+"group": "",
+"aliases": [],
+"lat": 53.53948,
+"lon": 9.96437,
+"address": "Hermann-Blohm-Straße 3, Hamburg"
+}
+]

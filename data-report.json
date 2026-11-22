@@ -1,0 +1,63 @@
+{
+ "run": "2026-11-22",
+ "note": "Sonderlauf: Quellen bereinigt, Spielorte vereinheitlicht, Uhrzeiten und Lesungen ergänzt",
+ "total": 3450,
+ "added": 13,
+ "changed": 316,
+ "removed": 53,
+ "unconfirmed": 0,
+ "cancelled": 44,
+ "missingTime": 1228,
+ "sourcesFailed": [
+  "Polittbüro (Seite nicht erreichbar)",
+  "Harbour Front (Zertifikatsfehler)",
+  "resonanzraum (keine Termine gefunden)",
+  "Trabrennbahn (Programm 2027 noch nicht veröffentlicht)"
+ ],
+ "coverage": {
+  "sample": 89,
+  "found": 54,
+  "rate": 61,
+  "source": "rausgegangen.de (Zufallsstichprobe)",
+  "byCat": {
+   "Gesprochenes": [
+    9,
+    18
+   ],
+   "Konzerte & Musik": [
+    35,
+    53
+   ],
+   "Shows & Performances": [
+    7,
+    11
+   ],
+   "Theater": [
+    3,
+    7
+   ]
+  },
+  "missingVenues": [
+   "KörberForum",
+   "Hafenbahnhof",
+   "Hafenklang",
+   "JazzHall",
+   "Cascadas",
+   "Hebebühne",
+   "Indra Musikclub",
+   "Friedrich-Ebert-Halle Harburg",
+   "KulturKlinker Barmbek",
+   "a&o Hostel Hamburg City",
+   "Haus 73",
+   "Hamburger Kammerspiele",
+   "Theaterschiff",
+   "Slot",
+   "Knust",
+   "Große Freiheit 36",
+   "MS Stubnitz",
+   "Marias Ballroom",
+   "Molotow Musikclub",
+   "Bahnhof Pauli"
+  ]
+ }
+}
