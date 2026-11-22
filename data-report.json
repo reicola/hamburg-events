@@ -1,7 +1,7 @@
 {
  "run": "2026-11-22",
- "note": "Sonderlauf: Quellen bereinigt (u. a. KörberForum, Hafenbahnhof, Cascadas, Hebebühne, Haus 73, JazzHall ausgeschlossen), Spielorte vereinheitlicht, Uhrzeiten und Lesungen ergänzt",
- "total": 3449,
+ "note": "Sonderlauf: Quellen bereinigt (u. a. KörberForum, Hafenbahnhof, Cascadas, Hebebühne, Haus 73, HfMT/JazzHall, Buxtehude ausgeschlossen), Spielorte vereinheitlicht, Uhrzeiten und Lesungen ergänzt",
+ "total": 3442,
  "added": 13,
  "changed": 316,
  "removed": 53,

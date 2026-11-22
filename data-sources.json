@@ -296,14 +296,6 @@
   "tier": "B"
  },
  {
-  "id": "hfmt",
-  "name": "HfMT Forum",
-  "type": "Konzertort",
-  "ort": "Rotherbaum",
-  "url": "https://www.hfmt-hamburg.de",
-  "tier": "B"
- },
- {
   "id": "staatsoper",
   "name": "Staatsoper / Hamburg Ballett",
   "type": "Oper",
@@ -486,14 +478,6 @@
   "type": "Kulturzentrum",
   "ort": "Reinbek",
   "url": "https://www.schloss-reinbek.de/de/kulturprogramm/veranstaltungskalender/",
-  "tier": "A"
- },
- {
-  "id": "buxtehude",
-  "name": "Stadthalle / Kulturforum Buxtehude",
-  "type": "Kulturzentrum",
-  "ort": "Buxtehude",
-  "url": "https://www.mvp.de/niedersachsen/veranstaltungen/ (Buxtehuder Kleinkunst-Igel, Halepaghen-Bühne)",
   "tier": "A"
  },
  {

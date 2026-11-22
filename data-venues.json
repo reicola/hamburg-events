@@ -20,16 +20,6 @@
 "address": "Revaler Straße 99, Berlin"
 },
 {
-"name": "Aula Süd Buxtehude",
-"ort": "Buxtehude",
-"district": "",
-"group": "",
-"aliases": [],
-"lat": 53.46037,
-"lon": 9.68689,
-"approx": true
-},
-{
 "name": "Bahnhof Pauli",
 "ort": "Hamburg",
 "district": "St. Pauli",
@@ -285,16 +275,6 @@
 "lat": 53.54456,
 "lon": 9.94795,
 "address": "Große Elbstraße 84, Hamburg"
-},
-{
-"name": "Halepaghen-Bühne Buxtehude",
-"ort": "Buxtehude",
-"district": "",
-"group": "",
-"aliases": [],
-"lat": 53.47674,
-"lon": 9.69373,
-"address": "Konopkastraße 5, Buxtehude"
 },
 {
 "name": "Hamburger Kammerspiele",
@@ -642,16 +622,6 @@
 "lat": 50.96898,
 "lon": 7.01682,
 "address": "Schanzenstraße 40, Köln"
-},
-{
-"name": "Ratsaal Buxtehude",
-"ort": "Buxtehude",
-"district": "",
-"group": "",
-"aliases": [],
-"lat": 53.47403,
-"lon": 9.69588,
-"address": "Bahnhofstraße 7, Buxtehude"
 },
 {
 "name": "Reeperbahn (diverse Clubs)",
