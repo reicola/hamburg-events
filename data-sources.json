@@ -29,7 +29,8 @@
   "type": "Aggregator",
   "ort": "Hamburg",
   "url": "https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungskalender/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "hamburg-de",
@@ -69,7 +70,8 @@
   "type": "Konzerthaus",
   "ort": "HafenCity",
   "url": "https://www.elbphilharmonie.de/de/programm/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "laeiszhalle",
@@ -77,7 +79,8 @@
   "type": "Konzerthaus",
   "ort": "Neustadt",
   "url": "https://www.elbphilharmonie.de/de/programm/?venue=laeiszhalle",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "barclays",
@@ -85,7 +88,8 @@
   "type": "Arena",
   "ort": "Bahrenfeld",
   "url": "https://www.barclays-arena.de/events",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "sporthalle",
@@ -93,7 +97,8 @@
   "type": "Arena",
   "ort": "Winterhude",
   "url": "https://ssl.webpack.de/termine.sporthallehamburg.de/pr/clipper.php",
-  "tier": "A"
+  "tier": "A",
+  "note": "clipper.php per robots gesperrt; Ersatz: https://www.songkick.com/venues/508211-hamburg-sporthalle"
  },
  {
   "id": "inselpark",
@@ -109,7 +114,8 @@
   "type": "Stadion",
   "ort": "Bahrenfeld",
   "url": "https://www.songkick.com/venues/93566-volksparkstadion/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "stadtpark",
@@ -117,7 +123,8 @@
   "type": "Open Air",
   "ort": "Winterhude",
   "url": "https://stadtparkopenair.de/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "trabrennbahn",
@@ -133,7 +140,8 @@
   "type": "Kongress",
   "ort": "St. Pauli",
   "url": "https://www.cch.de/whats-on/events",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "georg-elser",
@@ -141,7 +149,8 @@
   "type": "Halle",
   "ort": "Barmbek",
   "url": "https://www.songkick.com/venues/4427348-georg-elser-halle/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "docks",
@@ -149,7 +158,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.songkick.com/venues/29587-docks-hamburg/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "grossefreiheit",
@@ -157,15 +167,17 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://grossefreiheit36.de/events",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "markthalle",
   "name": "Markthalle",
   "type": "Club",
   "ort": "Altstadt",
-  "url": "https://www.markthalle-hamburg.de",
-  "tier": "A"
+  "url": "https://markthalle-hamburg.de/konzerte/",
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "fabrik",
@@ -173,7 +185,8 @@
   "type": "Club",
   "ort": "Ottensen",
   "url": "https://fabrik.de/programm",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "knust",
@@ -181,15 +194,17 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://knusthamburg.de/programm/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "gruenspan",
   "name": "Grünspan",
   "type": "Club",
   "ort": "St. Pauli",
-  "url": "https://www.gruenspan.de",
-  "tier": "A"
+  "url": "https://www.gruenspan.de/konzerte/",
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "mojo",
@@ -197,7 +212,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.mojo.de/programme/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "uebel",
@@ -205,7 +221,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.uebelundgefaehrlich.com",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "molotow",
@@ -213,7 +230,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.molotowclub.com/programm/programm.php",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "logo",
@@ -221,7 +239,8 @@
   "type": "Club",
   "ort": "Rotherbaum",
   "url": "https://www.logohamburg.de/programm/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bahnhofpauli",
@@ -229,7 +248,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.songkick.com/venues/3163919-bahnhof-pauli/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "nochtspeicher",
@@ -237,7 +257,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://nochtspeicher.de/ (Seiten ?start=30,60,90)",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "hafenklang",
@@ -245,7 +266,8 @@
   "type": "Club",
   "ort": "Altona",
   "url": "https://www.songkick.com/venues/93248-hafenklang/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "indra",
@@ -253,7 +275,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.songkick.com/venues/587811-indra/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "kent",
@@ -261,7 +284,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.songkick.com/venues/4648520-kent-club-hamburg/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "betty",
@@ -269,7 +293,8 @@
   "type": "Club",
   "ort": "St. Pauli",
   "url": "https://www.songkick.com/venues/4611889-betty/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "kulturkirche",
@@ -277,7 +302,8 @@
   "type": "Konzertort",
   "ort": "Altona",
   "url": "https://www.songkick.com/venues/515941-kulturkirche-altona/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "michel",
@@ -300,8 +326,9 @@
   "name": "Staatsoper / Hamburg Ballett",
   "type": "Oper",
   "ort": "Neustadt",
-  "url": "https://www.staatsoper-hamburg.de",
-  "tier": "A"
+  "url": "https://www.die-hamburgische-staatsoper.de/de/kalender",
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "schauspielhaus",
@@ -309,7 +336,8 @@
   "type": "Theater",
   "ort": "St. Georg",
   "url": "https://schauspielhaus.de/spielplan?schedule%5B0%5D=month%3AJJJJ-MM",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "thalia",
@@ -317,7 +345,8 @@
   "type": "Theater",
   "ort": "Altstadt",
   "url": "https://www.thalia-theater.de/de/termine",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "kampnagel",
@@ -325,7 +354,8 @@
   "type": "Theater",
   "ort": "Winterhude",
   "url": "https://kampnagel.de/kalender",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "stpaulitheater",
@@ -341,7 +371,8 @@
   "type": "Theater",
   "ort": "Uhlenhorst",
   "url": "https://www.ernst-deutsch-theater.de/spielplan",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "schmidt",
@@ -357,7 +388,8 @@
   "type": "Kabarett",
   "ort": "Eppendorf",
   "url": "https://www.almahoppe.de/spielplan/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "polittbuero",
@@ -381,7 +413,8 @@
   "type": "Museum",
   "ort": "St. Georg",
   "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "deichtorhallen",
@@ -389,7 +422,8 @@
   "type": "Museum",
   "ort": "Altstadt",
   "url": "https://www.deichtorhallen.de/ausstellungen",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bucerius",
@@ -397,7 +431,8 @@
   "type": "Museum",
   "ort": "Altstadt",
   "url": "https://www.buceriuskunstforum.de",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "mkg",
@@ -405,7 +440,8 @@
   "type": "Museum",
   "ort": "St. Georg",
   "url": "https://www.mkg-hamburg.de/ausstellungen",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "kunstverein",
@@ -421,7 +457,8 @@
   "type": "Museum",
   "ort": "Altstadt",
   "url": "https://www.kunsthaushamburg.de/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "barlach",
@@ -437,7 +474,8 @@
   "type": "Museum",
   "ort": "Harburg",
   "url": "https://www.deichtorhallen.de",
-  "tier": "B"
+  "tier": "B",
+  "last": "2026-11-23"
  },
  {
   "id": "marks",
@@ -462,7 +500,8 @@
   "type": "Theater",
   "ort": "Norderstedt",
   "url": "https://www.tribuehne.de/programm",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "wedel",
@@ -470,7 +509,8 @@
   "type": "Theater",
   "ort": "Wedel",
   "url": "https://www.batavia-wedel.de/programm/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "reinbek",
@@ -478,7 +518,8 @@
   "type": "Kulturzentrum",
   "ort": "Reinbek",
   "url": "https://www.schloss-reinbek.de/de/kulturprogramm/veranstaltungskalender/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "stade",
@@ -486,7 +527,8 @@
   "type": "Kulturzentrum",
   "ort": "Stade",
   "url": "https://www.stadeum.de/veranstaltungen",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "seevetal",
@@ -494,7 +536,8 @@
   "type": "Kulturzentrum",
   "ort": "Seevetal",
   "url": "https://www.burg-seevetal.de/portal/aseiten/veranstaltungen-1000-10.html",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "ewerk",
@@ -502,7 +545,8 @@
   "type": "Club",
   "ort": "Köln",
   "url": "https://www.e-werk-cologne.com/programm/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "palladium",
@@ -510,7 +554,8 @@
   "type": "Club",
   "ort": "Köln",
   "url": "https://www.palladium-koeln.de/programm/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "gloria",
@@ -518,7 +563,8 @@
   "type": "Kabarett/Konzert",
   "ort": "Köln",
   "url": "https://gloria.koeln/programm",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "columbiahalle",
@@ -526,7 +572,8 @@
   "type": "Club",
   "ort": "Berlin",
   "url": "https://columbiahalle.berlin/veranstaltungen.html",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "astra",
@@ -534,7 +581,8 @@
   "type": "Club",
   "ort": "Berlin",
   "url": "https://www.astra-berlin.de",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "festsaal",
@@ -550,7 +598,8 @@
   "type": "Club",
   "ort": "Berlin",
   "url": "https://www.lido-berlin.de",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "so36",
@@ -558,7 +607,8 @@
   "type": "Club",
   "ort": "Berlin",
   "url": "https://www.so36.com",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "huxleys",
@@ -566,7 +616,8 @@
   "type": "Club",
   "ort": "Berlin",
   "url": "https://huxleysneuewelt.de/events",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "centralkomitee",
@@ -582,7 +633,8 @@
   "type": "Theater",
   "ort": "Rotherbaum",
   "url": "https://hamburger-kammerspiele.de/karten/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "festival-reeperbahn",
@@ -622,7 +674,8 @@
   "type": "Kirche",
   "ort": "Hamburg",
   "url": "https://www.katharinen-hamburg.de/aktuelles/veranstaltungen/kirchenmusik/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-0",
@@ -630,7 +683,8 @@
   "type": "Halle",
   "ort": "Bielefeld",
   "url": "https://www.stadthalle-bielefeld.de/fuer-besucher/veranstaltungen",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-1",
@@ -638,7 +692,8 @@
   "type": "Konzerthaus",
   "ort": "Bielefeld",
   "url": "https://www.buo-bielefeld.de/rudolf-oetker-halle/kalender",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-2",
@@ -646,7 +701,8 @@
   "type": "Club",
   "ort": "Bielefeld",
   "url": "https://www.songkick.com/venues/29661-lokschuppen/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-3",
@@ -654,7 +710,8 @@
   "type": "Club",
   "ort": "Bielefeld",
   "url": "https://www.songkick.com/venues/2011354-forum-bielefeld/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-4",
@@ -662,7 +719,8 @@
   "type": "Club",
   "ort": "Bielefeld",
   "url": "https://www.songkick.com/venues/198203-bunker-ulmenwall/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-5",
@@ -670,7 +728,8 @@
   "type": "Club",
   "ort": "Bielefeld",
   "url": "https://www.songkick.com/venues/198168-movie/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-6",
@@ -678,7 +737,8 @@
   "type": "Club",
   "ort": "Bielefeld",
   "url": "https://www.songkick.com/venues/1800603-nr-z-p/calendar",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  },
  {
   "id": "bi-7",
@@ -686,6 +746,7 @@
   "type": "Museum",
   "ort": "Bielefeld",
   "url": "https://kunsthalle-bielefeld.de/programm/ausstellungen/",
-  "tier": "A"
+  "tier": "A",
+  "last": "2026-11-23"
  }
 ]
