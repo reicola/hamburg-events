@@ -1,1 +1,24 @@
-{"lastRun": "2026-11-23", "nextRun": "2026-11-26", "pilot": false, "sourcesScanned": 60, "eventCount": 3504, "newCount": 128, "runCount": 1, "horizon": "2028-05-31", "failed": ["Ticketmaster (Connector nicht verbunden)", "Sporthalle Hamburg (Terminseite per robots.txt gesperrt)", "St. Pauli Theater (Spielplan lädt per JavaScript, Webshop per robots.txt gesperrt)", "Schmidt Theater/Tivoli (Spielplan lädt per JavaScript, keine Termine lesbar)", "Centralkomitee (Ticketshop nur mit JavaScript)", "St. Michaelis (Bot-Prüfung, keine Konzerte lesbar)", "rausgegangen.de (Seiten nicht abrufbar – Abdeckung nicht erhoben)", "Thalia Theater (nur 3 Tage lesbar, Datumsfilter per robots.txt gesperrt)"]}
+{
+ "lastRun": "2026-11-26",
+ "nextRun": "2026-11-30",
+ "pilot": false,
+ "sourcesScanned": 81,
+ "eventCount": 4257,
+ "newCount": 843,
+ "runCount": 2,
+ "horizon": "2028-05-31",
+ "failed": [
+  "Ticketmaster (Connector nicht verbunden)",
+  "Centralkomitee (Ticketshop nur mit JavaScript – nur 11 Termine über Songkick, Comedy/Lesungen fehlen)",
+  "Rudolf-Oetker-Halle Bielefeld (Kalender lädt nach – nur bis 14.12. lesbar, Rest über Songkick)",
+  "Polittbüro (Website nicht lesbar, keine Termine gefunden)",
+  "hamburg.de (Serverfehler)",
+  "NDR-Orchester ndr.de (für WebFetch gesperrt)",
+  "Sporthalle Hamburg (Terminseite per robots.txt gesperrt – Ersatz Songkick)",
+  "Inselpark Arena (Website nicht lesbar – Ersatz Songkick)",
+  "Festsaal Kreuzberg (keine Termine lesbar – Ersatz Songkick)",
+  "resonanzraum (Website nicht lesbar – Ersatz hamburg-tourism.de)",
+  "Kunstverein (Website liefert keinen Inhalt – Ersatz e-flux/hamburg-tourism.de)",
+  "Thalia Theater (Terminliste nur 3 Tage – Stückseiten genutzt, evtl. unvollständig)"
+ ]
+}
